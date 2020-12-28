@@ -11,7 +11,7 @@ body{font-size:14px; overflow: hidden;}
 
 .frame-center{width:calc(100% - 412px); min-height:900px; max-height:900px; overflow-y:auto; position: relative; z-index:0; float:left;}
 
-
+.grid-wrap{padding-bottom:100px}
 .item-area{position:relative; width:100%;}
 .item-title{width:100%}
 .item-title .ui-tab-btn,
