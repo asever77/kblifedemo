@@ -423,17 +423,17 @@ dl.bul-hyphen > div:first-child{margin-top:0;}
 .grid-wrap{padding:10px;}
 .grid-row {margin:20px 0 0;}
 .grid-col {margin:0 10px;}
-.grid-col.col1 {flex:1; min-width:calc(((100% / 12) * 1) - 20px); max-width:calc(((100% / 12) * 1) - 20px);}
-.grid-col.col2 {flex:1; min-width:calc(((100% / 12) * 2) - 20px); max-width:calc(((100% / 12) * 2) - 20px);}
-.grid-col.col3 {flex:1; min-width:calc(((100% / 12) * 3) - 20px); max-width:calc(((100% / 12) * 3) - 20px);}
-.grid-col.col4 {flex:1; min-width:calc(((100% / 12) * 4) - 20px); max-width:calc(((100% / 12) * 4) - 20px);}
-.grid-col.col5 {flex:1; min-width:calc(((100% / 12) * 5) - 20px); max-width:calc(((100% / 12) * 5) - 20px);}
-.grid-col.col6 {flex:1; min-width:calc(((100% / 12) * 6) - 20px); max-width:calc(((100% / 12) * 6) - 20px);}
-.grid-col.col7 {flex:1; min-width:calc(((100% / 12) * 7) - 20px); max-width:calc(((100% / 12) * 7) - 20px);}
-.grid-col.col8 {flex:1; min-width:calc(((100% / 12) * 8) - 20px); max-width:calc(((100% / 12) * 8) - 20px);}
-.grid-col.col9 {flex:1; min-width:calc(((100% / 12) * 9) - 20px); max-width:calc(((100% / 12) * 9) - 20px);}
-.grid-col.col10 {flex:1; min-width:calc(((100% / 12) * 10) - 20px); max-width:calc(((100% / 12) * 10) - 20px);}
-.grid-col.col11 {flex:1; min-width:calc(((100% / 12) * 11) - 20px); max-width:calc(((100% / 12) * 11) - 20px);}
-.grid-col.col12 {flex:1; min-width:calc(100% - 20px); max-width:calc(100% - 20px);}
+.grid-col[data-col="1"] {flex:1; min-width:calc(((100% / 12) * 1) - 20px); max-width:calc(((100% / 12) * 1) - 20px);}
+.grid-col[data-col="2"] {flex:1; min-width:calc(((100% / 12) * 2) - 20px); max-width:calc(((100% / 12) * 2) - 20px);}
+.grid-col[data-col="3"] {flex:1; min-width:calc(((100% / 12) * 3) - 20px); max-width:calc(((100% / 12) * 3) - 20px);}
+.grid-col[data-col="4"] {flex:1; min-width:calc(((100% / 12) * 4) - 20px); max-width:calc(((100% / 12) * 4) - 20px);}
+.grid-col[data-col="5"] {flex:1; min-width:calc(((100% / 12) * 5) - 20px); max-width:calc(((100% / 12) * 5) - 20px);}
+.grid-col[data-col="6"] {flex:1; min-width:calc(((100% / 12) * 6) - 20px); max-width:calc(((100% / 12) * 6) - 20px);}
+.grid-col[data-col="7"] {flex:1; min-width:calc(((100% / 12) * 7) - 20px); max-width:calc(((100% / 12) * 7) - 20px);}
+.grid-col[data-col="8"] {flex:1; min-width:calc(((100% / 12) * 8) - 20px); max-width:calc(((100% / 12) * 8) - 20px);}
+.grid-col[data-col="9"] {flex:1; min-width:calc(((100% / 12) * 9) - 20px); max-width:calc(((100% / 12) * 9) - 20px);}
+.grid-col[data-col="10"] {flex:1; min-width:calc(((100% / 12) * 10) - 20px); max-width:calc(((100% / 12) * 10) - 20px);}
+.grid-col[data-col="11"] {flex:1; min-width:calc(((100% / 12) * 11) - 20px); max-width:calc(((100% / 12) * 11) - 20px);}
+.grid-col[data-col="12"] {flex:1; min-width:calc(100% - 20px); max-width:calc(100% - 20px);}
 
 
