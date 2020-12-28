@@ -8,7 +8,7 @@ body:before {content:''; position:fixed; left:0; top:0; width:100%; height:0;}/*
 body, iframe, div, p, span, strong, em, b, i,  
 h1, h2, h3, h4, h5, h6, 
 form, fieldset, button, a, label, 
-table, tbody, thead, tr, th, td{margin:0; padding:0; box-sizing:border-box; font:inherit;}
+table, tbody, thead, tr, th, td{margin:0; padding:0; box-sizing:border-box; }
 dl, dt, dd, ul, ol, li {box-sizing:border-box; list-style:none; padding:0; margin:0; font:inherit;}
 img, fieldset, iframe, button {border:0 none;}
 table { width: 100%; table-layout: fixed; border-collapse: collapse; border-spacing:0;}
@@ -320,7 +320,7 @@ a.btn-base-l{padding:21px 20px 16px;}
 .tbl-base table > tbody > tr > th {background:#fff; color:#666; font-weight:500; font-size:14px;}
 .tbl-base tbody + tbody,
 .tbl-base tbody.line-t{border-top:1px solid #c5c5c5;}
-.tbl-base .none td{padding:30px 0;}
+.tbl-base .none td{padding:57px 0;}
 
 /* [base] BULLET LIST ---------------------------------------------------------------------------*/
 .bul-hyphen,

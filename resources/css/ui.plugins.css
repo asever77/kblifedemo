@@ -341,7 +341,7 @@ a.ui-acco-btn:after {content:"keyboard_arrow_right";}
 
 /* ui-tblscroll */
 .ui-tablescroll {position: relative;}
-.ui-tablescroll-wrap {overflow-y:auto; height:200px; width:100%; }
+.ui-tablescroll-wrap {overflow-y:auto; height:100px; width:100%; }
 .ui-tablescroll-wrap.tbl-base{border:0;}
 .tbl-base.not-space .ui-tablescroll-clone{width:100%;}
 .tbl-base .ui-tablescroll-clone {position:absolute; width:calc(100% - 17px); top:0; left:0; z-index:1;}
