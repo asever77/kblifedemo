@@ -83,7 +83,7 @@ body{font-size:14px; overflow: hidden;}
 .frame-left .item-title h3 {border:0; padding-left:0; padding-right:0;}
 .frame-left .item-content {border:0; padding:0; margin-top:0;}
 .frame-left .tbl-base {border-bottom:0;}
-.frame-left .ui-tablescroll-wrap {height:250px;}
+.frame-left .ui-tablescroll-wrap {height:230px;}
 
 .call-area {margin:50px 0 25px}
 .call-status {display:inline-block; vertical-align:middle; font-size:0;}
