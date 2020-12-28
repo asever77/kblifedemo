@@ -23,307 +23,236 @@
 
 <body>
 	<div class="base-wrap" id="baseWrap">
-        <!-- left -->
-        <section class="frame-left">
-            <section class="item-area item-header">
-                <a href="javascript:void(0);" class="link-paging">
-                    <h2><span>40-50대</span><span>자동차보험 가입</span></h2>
-                </a>
-                <div class="call-area">
-                    <div class="call-status">
-                        <!-- 활성화 시, span에 on 클래스 추가 -->
-                        <span class="outgoing on">발신 상태 <i class="txt-on">활성화</i><i>비활성화</i></span>
-                        <span class="incoming">수신 상태 <i class="txt-on">활성화</i><i>비활성화</i></span>
-                    </div>
-                    <div class="call-utils">
-                        <button type="button" class="btn-base-s"><span>휴식</span></button>
-                        <button type="button" class="btn-base-s"><span>전화끊기</span></button>
-                        <button type="button" class="btn-base-s"><span>대기</span></button>
-                    </div>
-                </div>
-                <div class="box-base">
-                    <div class="field-area">
-                        <div class="field-item">
-                            <div class="field-item-title">
-                                <label for="test_b1">전화번호</label>
-                            </div>
-                            <div class="field-item-content">
-                                <input type="tel" id="test_b1" class="inp-base" value="" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="frame-wrap">
+            <div class="frame-bar">
 
-            <section class="item-area">
-                <div class="item-title">
-                    <h3>캠페인 대상고객</h3>
-                </div>
-                <div class="item-content">
-                    <div class="ui-tablescroll tbl-base">
-                        <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
-                            <table>
-                                <caption>
-                                    <strong>목록형 기본 테이블</strong>
-                                    <p class="ui-caption"></p>
-                                </caption>
-                                <col style="width:65px;">
-                                <col style="width:95px;">
-                                <col style="width:auto;">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">성명</th>
-                                        <th scope="col">생년월일</th>
-                                        <th scope="col">전화번호</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="none">
-                                        <td colspan="3">내용이 없습니다.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>서성진</td>
-                                        <td>19661120</td>
-                                        <td>010-2546-3256</td>
-                                    </tr>
-                                    <tr>
-                                        <td>김연실</td>
-                                        <td>25681125</td>
-                                        <td>010-2589-6985</td>
-                                    </tr>
-                                    <tr>
-                                        <td>상품종</td>
-                                        <td>25686987</td>
-                                        <td>010-4589-9856</td>
-                                    </tr>
-                                    <tr>
-                                        <td>캠페인</td>
-                                        <td>32544521</td>
-                                        <td>010-3698-5896</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            
-            <section class="item-area">
-                <div class="item-title hidden">
-                    <h3>일 통계 정보</h3>
-                </div>
-                <div class="item-content">
-                    <dl class="data-area">
-                        <div>
-                            <dt>당일콜건수</dt>
-                            <dd><span>24</span>건</dd>
-                        </div>
-                        <div>
-                            <dt>당일콜시간</dt>
-                            <dd><span></span></dd>
-                        </div>
-                        <div>
-                            <dt>일계약건수</dt>
-                            <dd><span>5</span>건</dd>
-                        </div>
-                        <div>
-                            <dt>일계약금액</dt>
-                            <dd><span>20,000</span>원</dd>
-                        </div>
-                    </dl>
-                </div>
-            </section>
-        </section>
-
-        <!-- content -->
-        <section class="frame-center">
-            <div class="frame-center-top">
-                <ul class="">
-                    <li>
-                        <b>TM</b>
-                        <button type="button" aria-label="삭제"></button>
-                    </li>
-                </ul>
-                <div class="">
-                    <a href="#"><span class="blind">첫페이지로</span></a>
-                    <a href="#"><span class="blind">첫페이지로</span></a>
-                </div>
             </div>
-
-            <div class="grid-wrap">
-                <div class="grid-row">
-
-                    <div class="grid-col col3">
-                        <section class="item-area">
-                            <div class="item-title">
-                                <h3>기본정보</h3>
+            <div class="frame-inner">
+                <!-- left -->
+                <section class="frame-left">
+                    <section class="item-area item-header">
+                        <a href="javascript:void(0);" class="ui-drop drop-header" id="uiDropCampaign">
+                            <h2>
+                                <span>40-50대</span><span>자동차보험 가입</span>
+                            </h2>
+                        </a>
+                        <div class="ui-drop-pnl drop-header-pnl" data-id="uiDropCampaign">
+                            <div class="ui-drop-box">
+                                <ul>
+                                    <li><button type="button"><span>30-40대</span><span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>40-50대</span><span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>50-60대</span><span>자동차보험 가입</span></button></li>
+                                </ul>
                             </div>
-                            <div class="item-content">
+                            <button type="button" class="ui-drop-close btn-close">
+                                <span class="hide">닫기</span>
+                            </button>
+                        </div>
+                        <div class="call-area">
+                            <div class="call-status">
+                                <a href="tel:000-0000" class="outgoing">전화 걸기</a>
+                                <a href="tel:000-0000" class="incoming">전화 받기</a>
+                            </div>
+                            <div class="call-utils">
+                                <button type="button" class="btn-base-s"><span>휴식</span></button>
+                                <button type="button" class="btn-base-s"><span>전화끊기</span></button>
+                                <button type="button" class="btn-base-s"><span>대기</span></button>
+                            </div>
+                        </div>
+                        <div class="box-base">
+                            <div class="field-area">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test_b1">전화번호</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="tel" id="test_b1" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                                <div class="field-area">
-                                    <div class="field-item">
-                                        <div class="field-item-title">
-                                            <label for="test_a1">고객명</label>
+                    <section class="item-area">
+                        <div class="item-title">
+                            <h3>캠페인 대상고객</h3>
+                        </div>
+                        <div class="item-content">
+                            <div class="ui-tablescroll tbl-base">
+                                <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
+                                    <table>
+                                        <caption>
+                                            <strong>목록형 기본 테이블</strong>
+                                            <p class="ui-caption"></p>
+                                        </caption>
+                                        <col style="width:65px;">
+                                        <col style="width:95px;">
+                                        <col style="width:auto;">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">성명</th>
+                                                <th scope="col">생년월일</th>
+                                                <th scope="col">전화번호</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="none">
+                                                <td colspan="3">내용이 없습니다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>서성진</td>
+                                                <td>19661120</td>
+                                                <td>010-2546-3256</td>
+                                            </tr>
+                                            <tr>
+                                                <td>김연실</td>
+                                                <td>25681125</td>
+                                                <td>010-2589-6985</td>
+                                            </tr>
+                                            <tr>
+                                                <td>상품종</td>
+                                                <td>25686987</td>
+                                                <td>010-4589-9856</td>
+                                            </tr>
+                                            <tr>
+                                                <td>캠페인</td>
+                                                <td>32544521</td>
+                                                <td>010-3698-5896</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    <section class="item-area">
+                        <div class="item-title hidden">
+                            <h3>일 통계 정보</h3>
+                        </div>
+                        <div class="item-content">
+                            <dl class="data-area">
+                                <div>
+                                    <dt>당일콜건수</dt>
+                                    <dd><span>24</span> 건</dd>
+                                </div>
+                                <div>
+                                    <dt>당일콜시간</dt>
+                                    <dd><span></span> </dd>
+                                </div>
+                                <div>
+                                    <dt>일계약건수</dt>
+                                    <dd><span>5</span> 건</dd>
+                                </div>
+                                <div>
+                                    <dt>일계약금액</dt>
+                                    <dd><span>20,000</span> 원</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- content -->
+                <section class="frame-center ui-scrollbar">
+                    <div class="frame-center-top">
+                        <ul class="">
+                            <li>
+                                <b>TM</b>
+                                <button type="button" aria-label="삭제"></button>
+                            </li>
+                            <li>
+                                <b>설계</b>
+                                <button type="button" aria-label="삭제"></button>
+                            </li>
+                        </ul>
+                        <div class="">
+                            <a href="#"><span class="blind">첫페이지로</span></a>
+                            <a href="#"><span class="blind">첫페이지로</span></a>
+                        </div>
+                    </div>
+
+                    <div class="grid-wrap" data-size="wide">
+                        <div class="grid-row">
+
+                            <div class="grid-col" data-col="8">
+                                <section class="item-area">
+                                    <div class="item-title">
+                                        <h3>기본사항</h3>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="grid-row">
+                                            <div class="grid-col group-area" data-col="5">
+                                                <div class="group-title"><strong>기본</strong></div>
+                                                <div class="group-content">
+                                                    <div class="field-area">
+                                                        <div class="field-item">
+                                                            <div class="field-item-title">
+                                                                <label for="test_a1">업적월</label>
+                                                            </div>
+                                                            <div class="field-item-content">
+                                                                <input type="text" id="test_a1" class="inp-base" value="" placeholder="placeholder text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-area">
+                                                        <div class="field-item">
+                                                            <div class="field-item-title">
+                                                                <label for="test_a1">업적월</label>
+                                                            </div>
+                                                            <div class="field-item-content">
+                                                                <input type="text" id="test_a1" class="inp-base" value="" placeholder="placeholder text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-col" data-col="7">
+                                                <button type="button" class="group-title"><strong>모집인 <span class="ico-search">검색</span></strong></button>
+                                                <div class="group-content">
+
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="field-item-content">
-                                            <input type="text" id="test_a1" class="inp-base" value="" placeholder="placeholder text">
-                                        </div>
                                     </div>
-                                </div>
-
+                                </section>
                             </div>
-                        </section>
-                    </div>
 
-                    <div class="grid-col col6">
-                        <section class="item-area">
-                            <div class="item-title">
-                                <h3>기본테이블</h3>
-                            </div>
-                            <div class="item-content">
-                                <div class="ui-tablescroll tbl-base">
-                                    <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
-                                        <table>
-                                            <caption>
-                                                <strong>목록형 기본 테이블</strong>
-                                                <p class="ui-caption"></p>
-                                            </caption>
-                                            <col style="width:60px;">
-                                            <col style="width:80px;">
-                                            <col style="width:auto;">
-                                            <col style="width:auto;">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">구분</th>
-                                                    <th scope="col">우편번호</th>
-                                                    <th scope="col">주소1</th>
-                                                    <th scope="col">주소2</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="none">
-                                                    <td colspan="4">내용이 없습니다.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>구분값</td>
-                                                    <td>32455</td>
-                                                    <td class="txta-l">서울 강남구 강남동 525-5</td>
-                                                    <td class="txta-l">경기도 부천시 송내동 송내길 54-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>구분값</td>
-                                                    <td>32455</td>
-                                                    <td class="txta-l">서울 강남구 강남동 525-5</td>
-                                                    <td class="txta-l">경기도 부천시 송내동 송내길 54-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>구분값</td>
-                                                    <td>32455</td>
-                                                    <td class="txta-l">서울 강남구 강남동 525-5</td>
-                                                    <td class="txta-l">경기도 부천시 송내동 송내길 54-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>구분값</td>
-                                                    <td>32455</td>
-                                                    <td class="txta-l">서울 강남구 강남동 525-5</td>
-                                                    <td class="txta-l">경기도 부천시 송내동 송내길 54-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>구분값</td>
-                                                    <td>32455</td>
-                                                    <td class="txta-l">서울 강남구 강남동 525-5</td>
-                                                    <td class="txta-l">경기도 부천시 송내동 송내길 54-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>구분값</td>
-                                                    <td>32455</td>
-                                                    <td class="txta-l">서울 강남구 강남동 525-5</td>
-                                                    <td class="txta-l">경기도 부천시 송내동 송내길 54-2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>구분값</td>
-                                                    <td>32455</td>
-                                                    <td class="txta-l">서울 강남구 강남동 525-5</td>
-                                                    <td class="txta-l">경기도 부천시 송내동 송내길 54-2</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            <div class="grid-col" data-col="4">
+                                <section class="item-area">
+                                    <div class="item-title">
+                                        <h3>기본정보</h3>
                                     </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class="grid-col col3">
-                        <section class="item-area">
-                            <div class="item-title">
-                                <h3>기본정보</h3>
-                            </div>
-                            <div class="item-content">
-            
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div class="grid-row">
-                    <div class="grid-col col12">
-                        <section class="item-area">
-                            <div class="ui-tab" id="exeTab1">
-                                <div class="item-title ui-tab-btns">
-                                    <div class="btn-wrap">
-                                        <button type="button" class="ui-tab-btn"><i>탭1</i></button>
-                                        <button type="button" class="ui-tab-btn"><i>탭2</i></button>
-                                        <button type="button" class="ui-tab-btn"><i>탭3</i></button>
-                                        <button type="button" class="ui-tab-btn"><i>탭4</i></button>
+                                    <div class="item-content">
+                    
                                     </div>
-                                </div>
-                                <div class="item-content ui-tab-pnls">
-                                    <section class="ui-tab-pnl">
-                                        <h3 class="ui-tab-tit">탭1</h3>
-                                        탭1 내용
-                                    </section>
-                                    <section class="ui-tab-pnl">
-                                        <h3 class="ui-tab-tit">탭2</h3>
-                                        탭2 내용
-                                    </section>
-                                    <section class="ui-tab-pnl">
-                                        <h3 class="ui-tab-tit">탭3</h3>
-                                        탭3 내용
-                                    </section>
-                                    <section class="ui-tab-pnl">
-                                        <h3 class="ui-tab-tit">탭4</h3>
-                                        탭4 내용
-                                    </section>
-                                </div>
+                                </section>
                             </div>
-
-
-                        </section>
+                        </div>
                     </div>
-       
-                </div>
+                    
+
+                </section>
+
+                <!-- right -->
+                <section class="frame-right">
+                    <h1><img src="../resources/img/common/logo.png" alt="KB생명"></h1>
+                    <nav>
+                        <button type="button">설계</button>
+                        <button type="button">cti</button>
+                        <button type="button">청약</button>
+                        <button type="button">보장내역</button>
+                        <button type="button">고객</button>
+                        <button type="button">파생</button>
+                        <button type="button">거부자</button>
+                        <button type="button">발송등록</button>
+                        <button type="button">메신저</button>
+                        <button type="button">영상통화</button>
+                    </nav>
+                </section>
             </div>
-            
-
-        </section>
-
-        <!-- right -->
-        <section class="frame-right">
-            <h1><img src="../resources/img/common/logo.png" alt="KB생명"></h1>
-            <nav>
-                <button type="button">설계</button>
-                <button type="button">cti</button>
-                <button type="button">청약</button>
-                <button type="button">보장내역</button>
-                <button type="button">고객</button>
-                <button type="button">파생</button>
-                <button type="button">거부자</button>
-                <button type="button">발송등록</button>
-                <button type="button">메신저</button>
-                <button type="button">영상통화</button>
-            </nav>
-        </section>
+        </div>
     </div>
 
     <script>
@@ -337,6 +266,16 @@
                     id:'exeTab1'
                 }); 
 
+                $plugins.uiDropdown({ 
+                    id:'uiDropCampaign',
+                    ps: 'BL',
+                    hold: true,
+                    dropSpace: $('body'),
+                    dropSrc: false,
+                    dropOffset: false,
+                    openback:function() { console.log('open callback'); },
+                    closeback:function() { console.log('close callback'); } 
+                });
 			});
 		})(jQuery, window, document);
 		
