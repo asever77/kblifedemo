@@ -1,0 +1,44 @@
+
+body{background-color:#f9f9f9; font-size:14px;} 
+
+.frame-right{position:fixed; right:0; top:0; width:92px; height:100%; background-color:#fff; text-align:center; padding:26px 10px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
+.frame-right nav button{display:inline-block; width:100%; margin-top:40px; color:#999; letter-spacing: -0.075em;}
+
+
+.frame-left{position:fixed; left:0; top:0; width:320px; height:100%; background-color:#fff; height:100%; padding:20px;}
+
+.frame-center{width:calc(100% - 412px); min-height:100vh; max-height:100vh; overflow-y:auto; margin-left:320px;}
+
+
+.item-area{position:relative; width:100%;}
+.item-title{width:100%}
+.item-title .ui-tab-btn,
+.item-title h3{font-size:15px; padding:5px 10px; color:#000; font-weight:600; letter-spacing:-0.075em; border-bottom:2px solid #f49c00; display:inline-block; min-width:100px;}
+.item-content{display:block; width:100%; background-color:#fff; border:1px solid #f4f4f4; padding:30px; margin-top:-1px;}
+
+/* tab */
+.item-title.ui-tab-btns:after{display: none;}
+.item-title .ui-tab-btn{border:0; background:none; min-height:0; border-bottom:2px solid #ccc; text-align:left;}
+.ui-tab-pnl{border:0; padding:0}
+
+
+.item-title .ui-tab-btn:nth-child(1){border-bottom:2px solid #444;}
+.item-title .ui-tab-btn:nth-child(2){border-bottom:2px solid #666;}
+.item-title .ui-tab-btn:nth-child(3){border-bottom:2px solid #aaa;}
+.item-title .ui-tab-btn:nth-child(4){border-bottom:2px solid #ddd;}
+.item-title .ui-tab-btn.selected{border-bottom:2px solid #f49c00;}
+
+.field-area{width:100%; display:block;}
+.field-item{width:100%; display: inline-block; font-size:0;}
+.field-item-title{display: inline-block; width:70px; font-size:13px; vertical-align: middle;}
+.field-item-content{display: inline-block; font-size:13px; }
+
+
+.ui-tablescroll {position: relative;}
+.ui-tablescroll-wrap {overflow-y:auto; height:200px; width:100%; }
+.tbl-base.not-space .ui-tablescroll-clone{width:100%;}
+.tbl-base .ui-tablescroll-clone {position:absolute; width:calc(100% - 17px); top:0; left:0; z-index:1;}
+
+
+
+
