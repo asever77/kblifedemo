@@ -22,7 +22,7 @@ input, textarea, select {box-sizing:border-box; font:inherit, sans-serif; outlin
 label{cursor:pointer;}
 
 caption{position:relative !important; width:1px !important; height:1px !important; color:transparent !important; overflow:hidden !important; clip:rect(1px, 1px,1px, 1px); clip-path:inset(50%); margin:-1px 0 0;}
-legend, .hidden, .hide { position:absolute !important; width:1px !important; height:1px !important; color:transparent !important; overflow:hidden !important; clip:rect(1px, 1px,1px, 1px); clip-path:inset(50%); }
+legend, .hidden, .hide, .blind { position:absolute !important; width:1px !important; height:1px !important; color:transparent !important; overflow:hidden !important; clip:rect(1px, 1px,1px, 1px); clip-path:inset(50%); }
 /* html5 */
 article, aside, details, figcaption, figure, footer, header, main, hgroup, nav, section, summary {display:block; margin:0; padding:0; box-sizing:border-box;}
 caption *{display:inline-block !important}
@@ -274,13 +274,13 @@ a.btn-base-l{padding:21px 20px 16px;}
 /* button icon style */
 [class*="btn-base"].ico-print:after {content:"print"; font-family:'Material Icons'; font-feature-settings:'liga'; display:inline-block; width:20px; height:20px; margin-left:5px; vertical-align:middle; margin-top:-3px; font-size:20px;}
 /* X close, del button, menu ... */
-.btn-today,
+/* .btn-today,
 .btn-del,
 .btn-close {position:relative; width:20px; height:20px; overflow:hidden; color:transparent; font-size:xx-small;}
 .btn-del:after,
 .btn-close:after{content:"close"; font-family:'Material Icons'; font-feature-settings:'liga'; display:block; width:100%; height:100%; font-size:20px; color:#fff; font-weight: 900; line-height:1;}
 .btn-del:after {color:#222;}
-.btn-today:after{content:"today"; font-family:'Material Icons'; font-feature-settings:'liga'; display:block; width:100%; height:100%; font-size:20px; color:#000; font-weight: 900; line-height:1;}
+.btn-today:after{content:"today"; font-family:'Material Icons'; font-feature-settings:'liga'; display:block; width:100%; height:100%; font-size:20px; color:#000; font-weight: 900; line-height:1;} */
 
 
 /* [base] BOX ---------------------------------------------------------------------------*/
