@@ -5,7 +5,7 @@ body{background-color:#f9f9f9; font-size:14px; overflow: hidden;}
 .frame-right nav button{display:inline-block; width:100%; margin-top:40px; color:#999; letter-spacing: -0.075em;}
 
 
-.frame-left{position:fixed; left:0; top:0; width:320px; height:100%; background-color:#fff; height:100%; padding:20px; z-index: 2;}
+.frame-left{position:fixed; left:0; top:0; display:flex; flex-direction:column; justify-content:space-between; width:320px; height:100%; background-color:#fff; height:100%; padding:20px;}
 
 .frame-center{width:calc(100% - 412px); min-height:100vh; max-height:100vh; overflow-y:auto; margin-left:320px;}
 
@@ -40,6 +40,31 @@ body{background-color:#f9f9f9; font-size:14px; overflow: hidden;}
 .tbl-base.not-space .ui-tablescroll-clone{width:100%;}
 .tbl-base .ui-tablescroll-clone {position:absolute; width:calc(100% - 17px); top:0; left:0; z-index:1;}
 
+/* box */
+.box-base {padding:18px 20px 20px; border:1px solid #f2f2f2; background:#f6f6f6;}
 
 .type-y .ui-scrollbar-bar{background:#c7c7c7; width:5px; right:0}
 .ui-scrollbar-barwrap.type-y{width:5px}
+
+/* frame : left */
+.link-paging {position:relative; display:block; text-decoration:none; padding:0 10px;}
+.link-paging:after {position:absolute; bottom:14px; right:15px; display:block; width:14px; height:14px; border-top:3px solid #222; border-right:3px solid #222; transform:rotate(135deg); box-sizing:border-box; content:"";}
+.link-paging h2 {font-size:30px; font-weight:700; color:#222; line-height:1.2em;}
+.link-paging span {display:block;}
+.link-paging span:last-child {padding-right:35px;}
+
+.frame-left .item-title .ui-tab-btn,
+.frame-left .item-title h3 {border:0; padding-left:0; padding-right:0;}
+.frame-left .item-content {border:0; padding:0; margin-top:0;}
+.frame-left .tbl-base {border-bottom:0;}
+
+.call-area {margin-top:50px}
+.call-status {display:inline-block; vertical-align:middle; font-size:0;}
+.call-status span {display:inline-block; width:80px; height:80px; margin:0 7px 0 5px; vertical-align:middle; border-radius:50%; background:url('../img/sp_call_status.png') 0 0/160px auto #EAEAEA; overflow:hidden; font-size:xx-small; color:transparent; text-indent:-999px;}
+.call-status span .txt-on {display:none;}
+.call-status span.outgoing {background-position-x:-80px;}
+.call-status span.on {background-position-y:-80px; background-color:#f49c00;}
+.call-status span.on i {display:none;}
+.call-status span.on .txt-on {display:inline;}
+.call-utils {display:inline-block; width:80px; vertical-align:middle;}
+.call-utils button {width:100%; margin:1.5px 0;}
