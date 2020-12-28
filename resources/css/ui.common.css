@@ -320,7 +320,7 @@ a.btn-base-l{padding:21px 20px 16px;}
 .tbl-base table > tbody > tr > th {background:#fff; color:#666; font-weight:500; font-size:14px;}
 .tbl-base tbody + tbody,
 .tbl-base tbody.line-t{border-top:1px solid #c5c5c5;}
-.tbl-base .none td{padding:57px 0;}
+.tbl-base .none td{padding:57px 0 56px;}
 
 /* [base] BULLET LIST ---------------------------------------------------------------------------*/
 .bul-hyphen,
