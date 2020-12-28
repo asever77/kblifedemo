@@ -43,3 +43,19 @@ body{background-color:#f9f9f9; font-size:14px; overflow: hidden;}
 
 .type-y .ui-scrollbar-bar{background:#c7c7c7; width:5px; right:0}
 .ui-scrollbar-barwrap.type-y{width:5px; background: rgba(0,0,0,0.05); border:0;}
+.item-content .ui-tablescroll-wrap{width:calc(100% + 15px);}
+.item-content .ui-scrollbar.ready > .ui-scrollbar-item{width:calc(100% - 15px);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
