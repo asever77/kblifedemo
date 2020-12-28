@@ -13,15 +13,13 @@ body{background-color:#f9f9f9; font-size:14px; overflow: hidden;}
 .item-area{position:relative; width:100%;}
 .item-title{width:100%}
 .item-title .ui-tab-btn,
-.item-title h3{font-size:15px; padding:5px 10px; color:#000; font-weight:600; letter-spacing:-0.075em; border-bottom:2px solid #f49c00; display:inline-block; min-width:100px;}
+.item-title h3{font-size:15px; padding:5px 10px; color:#000; font-weight:500; letter-spacing:-0.075em; border-bottom:2px solid #f49c00; display:inline-block; min-width:100px;}
 .item-content{display:block; width:100%; background-color:#fff; border:1px solid #f4f4f4; padding:30px; margin-top:-1px;}
 
 /* tab */
 .item-title.ui-tab-btns:after{display: none;}
 .item-title .ui-tab-btn{border:0; background:none; min-height:0; border-bottom:2px solid #ccc; text-align:left;}
 .ui-tab-pnl{border:0; padding:0}
-
-
 .item-title .ui-tab-btn:nth-child(1){border-bottom:2px solid #444;}
 .item-title .ui-tab-btn:nth-child(2){border-bottom:2px solid #666;}
 .item-title .ui-tab-btn:nth-child(3){border-bottom:2px solid #aaa;}
