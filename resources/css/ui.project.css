@@ -1,6 +1,6 @@
 
 body{background-color:#f9f9f9; font-size:14px;} 
-
+.base-wrap{width:100%;}
 .frame-right{position:fixed; right:0; top:0; width:92px; height:100%; background-color:#fff; text-align:center; padding:26px 10px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
 .frame-right nav button{display:inline-block; width:100%; margin-top:40px; color:#999; letter-spacing: -0.075em;}
 
@@ -29,9 +29,10 @@ body{background-color:#f9f9f9; font-size:14px;}
 .item-title .ui-tab-btn.selected{border-bottom:2px solid #f49c00;}
 
 .field-area{width:100%; display:block;}
-.field-item{width:100%; display: inline-block; font-size:0;}
+.field-item{width:100%; display: inline-block; font-size:0; margin-top:5px}
+
 .field-item-title{display: inline-block; width:70px; font-size:13px; vertical-align: middle;}
-.field-item-content{display: inline-block; font-size:13px; }
+.field-item-content{display: inline-block; font-size:13px; width:calc(100% - 70px);}
 
 
 .ui-tablescroll {position: relative;}

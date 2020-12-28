@@ -31,13 +31,13 @@
         <!-- content -->
         <section class="frame-center">
             <div class="frame-center-top">
-                <ul class="">
+                <ul>
                     <li>
                         <b>TM</b>
                         <button type="button" aria-label="삭제"></button>
                     </li>
                 </ul>
-                <div class="">
+                <div>
                     <a href="#"><span class="blind">첫페이지로</span></a>
                     <a href="#"><span class="blind">첫페이지로</span></a>
                 </div>
@@ -59,7 +59,39 @@
                                             <label for="test_a1">고객명</label>
                                         </div>
                                         <div class="field-item-content">
-                                            <input type="text" id="test_a1" class="inp-base" value="" placeholder="placeholder text">
+                                            <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="field-item">
+                                        <div class="field-item-title">
+                                            <label for="test_a2">주민번호</label>
+                                        </div>
+                                        <div class="field-item-content">
+                                            <input type="text" id="test_a2" class="inp-base" value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="field-item">
+                                        <div class="field-item-title">
+                                            <label for="test_a3">생년월일</label>
+                                        </div>
+                                        <div class="field-item-content">
+                                            <input type="text" id="test_a3" class="inp-base" value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="field-item">
+                                        <div class="field-item-title">
+                                            <label for="test_a4">직장정보</label>
+                                        </div>
+                                        <div class="field-item-content">
+                                            <input type="text" id="test_a4" class="inp-base" value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="field-item">
+                                        <div class="field-item-title">
+                                            <label for="test_a5">e-mail</label>
+                                        </div>
+                                        <div class="field-item-content">
+                                            <input type="text" id="test_a5" class="inp-base" value="" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -71,15 +103,15 @@
                     <div class="grid-col col6">
                         <section class="item-area">
                             <div class="item-title">
-                                <h3>기본테이블</h3>
+                                <h3>주소지정보</h3>
                             </div>
                             <div class="item-content">
                                 <div class="ui-tablescroll tbl-base">
                                     <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
                                         <table>
                                             <caption>
-                                                <strong>목록형 기본 테이블</strong>
-                                                <p class="ui-caption"></p>
+                                                <strong>기본주소지정보</strong>
+                                                <span class="ui-caption"></span>
                                             </caption>
                                             <col style="width:60px;">
                                             <col style="width:80px;">
@@ -222,6 +254,7 @@
         ;(function($, win, doc, undefined) {
 			$(doc).ready(function(){
                 $plugins.uiScrollBar();
+                $plugins.uiCaption();
 
                 $plugins.uiTableScroll();
                 
