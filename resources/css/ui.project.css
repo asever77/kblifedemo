@@ -218,7 +218,7 @@ button.group-title:hover {background:#ddd;}
 .btn-home{display:inline-block; width:40px; height:40px; background:#e5e5e5 url(../img/sp_util.png) no-repeat 0 0; border-radius:50%;}
 .btn-logout{display:inline-block; width:40px; height:40px; background:#e5e5e5 url(../img/sp_util.png) no-repeat -40px 0; border-radius:50%; margin-left:4px}
 
-
+.frame-bar .ui-select-wrap.bottom{top:21px}
 
 
 
