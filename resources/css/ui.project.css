@@ -1,11 +1,17 @@
 
 body{font-size:14px; overflow: hidden;} 
 .frame-wrap{width:1600px; height:900px; overflow: hidden; background-color:#e1dfdb; border:5px solid #e1dfdb; border-bottom:5px solid #e1dfdb; border-top:0;  position:relative; margin:0 auto;}
-.frame-bar{width:100%; height:29px;}
-.frame-bar::after{content:""; display:block; clear:both;}
-.frame-bar .logo{float:left;}
+.frame-bar{width:100%; height:29px; display: flex; justify-content: space-between;}
+.frame-bar > *{flex:0;}
+.frame-bar .logo{max-width:126px}
 .frame-bar .logo img{margin-top:5px}
-.frame-bar .util{float:right; margin:5px 10px 0 0}
+.frame-bar .link{flex:1; padding-top:4px; text-align: center;}
+.frame-bar .link .ui-select{width:140px}
+.frame-bar .link .ui-select-btn{height:22px; font-size:12px; line-height:22px;}
+.frame-bar .link .inp-base{width:400px; height:22px; font-size:12px; line-height:22px;} 
+.frame-bar .btn-base{height:22px; font-size:12px; line-height:22px;     min-height: 22px; background:#959390; color:#fff; border-radius: 0;}
+.frame-bar .ui-select-btn span{margin-top:0}
+.frame-bar .util{min-width:60px}
 /* .frame-bar .logo{margin-top:7px} */
 .frame-inner{border:1px solid #dbd9d5; width:100%; height:867px; background-color:#f9f9f9; }
 .frame-right{position: absolute;; right:0; top:30px; width:92px; height:100%; background-color:#fff; text-align:center; padding:26px 10px; box-shadow:0 0 10px rgba(0,0,0,0.1); z-index: 2;}
@@ -137,8 +143,8 @@ button.group-title:hover {background:#ddd;}
 
 .btn-area{width:100%; text-align: right; padding-bottom:10px; margin-top:-20px}
 
-.frame-bar .btn-close{float:left; width:20px; height:20px; background:url(../img/frame_close.png) no-repeat 0 0;}
-.frame-bar .btn-mini{float:left; width:20px; height:20px; background:url(../img/frame_mini.png) no-repeat 0 0; margin-right:10px}
+.frame-bar .btn-close{display:inline-block; width:20px; height:20px; background:url(../img/frame_close.png) no-repeat 0 0;}
+.frame-bar .btn-mini{display:inline-block; width:20px; height:20px; background:url(../img/frame_mini.png) no-repeat 0 0; margin-right:10px}
 
 .ui-modal .btn-close{width:30px; height:30px; background:url(../img/modal_close.png) no-repeat 0 0; top:14px; right:24px}
 
@@ -177,5 +183,28 @@ button.group-title:hover {background:#ddd;}
 .paging-prev{background:url(../img/sp_paging.png) no-repeat 0 0;}
 .paging-next{background:url(../img/sp_paging.png) no-repeat -20px -20px;}
 .paging-last{background:url(../img/sp_paging.png) no-repeat 0 -20px;}
+
+.breadcrumbs{width:100%; overflow:hidden; padding:20px 30px 0;}
+.breadcrumbs li{float:left; position:relative; font-size: 0;}
+.breadcrumbs li + li{margin-left:20px}
+.breadcrumbs li::after{content:""; display:inline-block; vertical-align: middle; width:1px; height:10px; background:#e5e5e5; margin-left:15px}
+.breadcrumbs b{font-size:16px; font-weight:500; color:#b0b0b1; display:inline-block; padding-right:20px; vertical-align: middle;}
+.breadcrumbs button{width:14px; height:14px; display:inline-block; vertical-align: middle; background:url(../img/btn-del.png) no-repeat 0 0;}
+.breadcrumbs .selected b{font-size:16px;color:#222;}
+
+.frame-center-top{position:relative;}
+.frame-center-top .btn-area{position:absolute; width:auto; top:20px; right:30px; margin:0}
+.btn-home{display:inline-block; width:40px; height:40px; background:#e5e5e5 url(../img/sp_util.png) no-repeat 0 0; border-radius:50%;}
+.btn-logout{display:inline-block; width:40px; height:40px; background:#e5e5e5 url(../img/sp_util.png) no-repeat -40px 0; border-radius:50%; margin-left:4px}
+
+
+
+
+
+
+
+
+
+
 
 

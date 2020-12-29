@@ -28,7 +28,19 @@
                 <div class="logo">
                     <img src="../resources/img/frame_logo.png" alt="한국GA금융서비스">
                 </div>
-                <div>
+                <div class="link">
+                    <div class="ui-select">
+                        <select title="선택">
+                            <option>한국GA금융</option>
+                        </select>
+                    </div>
+                    <div class="ui-select">
+                        <select title="선택">
+                            <option>내부테스트용</option>
+                        </select>
+                    </div>
+                    <input type="text" class="inp-base" value="http://192.168.150.10:8080/IGAS2/intranet.jsp?YOU=YOU">
+                    <button type="button" class="btn-base"><span>연결 &gt;</span></button>
 
                 </div>
                 <div class="util">
@@ -167,15 +179,19 @@
                 <!-- content -->
                 <section class="frame-center ui-scrollbar">
                     <div class="frame-center-top">
-                        <ul class="">
+                        <ul class="breadcrumbs">
+                            <li class="selected">
+                                <b>설계</b>
+                                <button type="button"><span class="blind">삭제</span></button>
+                            </li>
                             <li>
                                 <b>TM</b>
-                                <button type="button" aria-label="삭제"></button>
+                                <button type="button"><span class="blind">삭제</span></button>
                             </li>
                         </ul>
-                        <div>
-                            <a href="#"><span class="blind">첫페이지로</span></a>
-                            <a href="#"><span class="blind">첫페이지로</span></a>
+                        <div class="btn-area">
+                            <a href="#" class="btn-home"><span class="blind">시작페이지로</span></a>
+                            <a href="#" class="btn-logout"><span class="blind">로그아웃</span></a>
                         </div>
                     </div>
 
@@ -632,7 +648,7 @@
 
                 <!-- right -->
                 <section class="frame-right">
-                    <h1><img src="../resources/img/common/logo.png" alt="KB생명"></h1>
+                    <h1><img src="../resources/img/logo.png" alt="KB생명"></h1>
                     <nav>
                         <button type="button">설계</button>
                         <button type="button">cti</button>
