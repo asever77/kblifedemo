@@ -144,7 +144,7 @@ button.group-title:hover {background:#ddd;}
 
 .modal-sample1 .ui-modal-wrap{width:800px}
 .modal-sample1 .field-row + .field-row{margin-top:10px;}
-.field-row[data-col="3"] .field-col{width:33.33%}
+.field-row[data-col="3"] .field-col{width:33.33%;}
 .field-row[data-col="1"] .field-col{width:100%}
 .modal-sample1 .field-col + .field-col{margin-left:60px}
 .ui-modal .item-content{padding:40px; border:0}
