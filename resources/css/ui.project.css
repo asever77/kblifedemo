@@ -209,9 +209,9 @@ button.group-title:hover {background:#ddd;}
 .breadcrumbs li{float:left; position:relative; font-size: 0;}
 .breadcrumbs li + li{margin-left:20px}
 .breadcrumbs li::after{content:""; display:inline-block; vertical-align: middle; width:1px; height:10px; background:#e5e5e5; margin-left:15px}
-.breadcrumbs b{font-size:16px; font-weight:500; color:#b0b0b1; display:inline-block; padding-right:20px; vertical-align: middle;}
-.breadcrumbs button{width:14px; height:14px; display:inline-block; vertical-align: middle; background:url(../img/btn-del.png) no-repeat 0 0;}
-.breadcrumbs .selected b{font-size:16px;color:#222;}
+.breadcrumbs .btn-tit{font-size:16px; font-weight:500; color:#b0b0b1; display:inline-block; padding-right:20px; vertical-align: middle;}
+.breadcrumbs .btn-del{width:14px; height:14px; display:inline-block; vertical-align: middle; background:url(../img/btn-del.png) no-repeat 0 0;}
+.breadcrumbs .selected .btn-tit{font-size:16px;color:#222;}
 
 .frame-center-top{position:relative;}
 .frame-center-top .btn-area{position:absolute; width:auto; top:20px; right:30px; margin:0}
