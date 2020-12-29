@@ -538,8 +538,8 @@ select.off:focus + .ui-select-btn:after{content:"keyboard_arrow_up";}
 
 .ui-select {position:relative; display:inline-block;}
 .ui-select select {width:100%;}
-.ui-select-btn {display:inline-block; position:relative; text-align:left; vertical-align:top; width:100%; height:40px; padding:0 35px 0 10px; border-radius:2px; border:1px solid #c9c9c9; font-size:14px; cursor:pointer; outline:0; box-sizing:border-box; text-overflow:ellipsis; background-color:#fff;}
-.ui-select-btn:after {content:"keyboard_arrow_down"; font-family: 'Material Icons'; display:block; position:absolute; right:10px; top:50%; margin-top:-10px; width:18px; height:20px; float:right; overflow:hidden; color:#000; font-size:20px; line-height: 1;}
+.ui-select-btn {display:inline-block; position:relative; text-align:left; vertical-align:top; width:100%; height:30px; padding:0 35px 0 10px; border:1px solid #f2f2f2; font-size:13px; cursor:pointer; outline:0; box-sizing:border-box; text-overflow:ellipsis; background-color:#fff;}
+.ui-select-btn:after {content:"keyboard_arrow_down"; font-family: 'Material Icons'; display:block; position:absolute; right:7px; top:50%; margin-top:-10px; width:18px; height:20px; float:right; overflow:hidden; color:#888; font-size:20px; line-height: 1;}
 .ui-select-btn span {display:inline-block; width:100%; text-align:left; word-break:nowrap; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; text-align:left; margin-top:6px;}
 .ui-select-btn[aria-expanded="true"],
 .ui-select-btn:focus,
@@ -548,17 +548,17 @@ select.off:focus + .ui-select-btn:after{content:"keyboard_arrow_up";}
 .ui-select-btn:focus:after,
 .ui-select-btn:active:after{content:"keyboard_arrow_up";}
 .ui-select-wrap.on {display:block}
-.ui-select-wrap.top {bottom:39px}
-.ui-select-wrap.bottom {top:39px}
+.ui-select-wrap.top {bottom:29px}
+.ui-select-wrap.bottom {top:29px}
 .ui-select-wrap {display:none; position:absolute; z-index:100; left:0; width:auto; border:1px solid #000; background:#fff; overflow-y:auto; max-height:162px}
-.ui-select-wrap.ui-scrollbar {position: absolute; min-height:162px}
+.ui-select-wrap.ui-scrollbar {position: absolute; max-height:162px}
 .ui-select-opts{overflow:hidden; width:100%;}
-.ui-select-opt {display:block; float:left; width:100%; padding:5px 20px 5px 10px; font-size:14px; height:40px; text-align:left; background:#fff; white-space:nowrap}
-.ui-select-opt.selected {font-weight:700; text-decoration:underline; background:#444; color:#fff;}
+.ui-select-opt {display:block; float:left; width:100%; padding:5px 20px 5px 10px; font-size:13px; height:30px; text-align:left; background:#fff; white-space:nowrap}
+.ui-select-opt.selected {background:#ececec;}
 .ui-select-opt.disabled {opacity: 0.5;}
 .ui-select-opts input:focus,
 .ui-d .ui-select-opt:focus,
-.ui-d .ui-select-opt:hover {background:#444; color:#fff;}
+.ui-d .ui-select-opt:hover {background:#ececec;}
 .ui-select-title {display:none; position:absolute; top:0; left:0;}
 .ui-select.type-tel {width:150px}
 .ui-select.type-bank {width:200px}

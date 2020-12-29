@@ -266,8 +266,8 @@ a[class*="btn-base"]{padding:13px 15px 8px;}
 [class*="btn-base"].disabled:hover,
 [class*="btn-base"].disabled:focus{border-color:#ccc; background:inherit;}
 /* base size */
-.btn-base-s{min-height:22px; font-size:12px;} 
-a.btn-base-s{padding:5px 15px 1px;}
+.btn-base-s{min-height:22px; font-size:12px; padding:3px 15px 1px;} 
+a.btn-base-s{padding:6px 15px 1px;}
 .btn-base-m{min-height:40px;} 
 .btn-base-l{min-height:60px; font-size:16px;}
 a.btn-base-l{padding:21px 20px 16px;}
