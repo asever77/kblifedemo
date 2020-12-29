@@ -550,7 +550,7 @@ select.off:focus + .ui-select-btn:after{content:"keyboard_arrow_up";}
 .ui-select-wrap.on {display:block}
 .ui-select-wrap.top {bottom:29px}
 .ui-select-wrap.bottom {top:29px}
-.ui-select-wrap {display:none; position:absolute; z-index:100; left:0; width:auto; border:1px solid #000; background:#fff; overflow-y:auto; max-height:162px}
+.ui-select-wrap {display:none; position:absolute; z-index:100; left:0; width:100%; border:1px solid #000; background:#fff; overflow-y:auto; max-height:162px}
 .ui-select-wrap.ui-scrollbar {position: absolute; max-height:162px}
 .ui-select-opts{overflow:hidden; width:100%;}
 .ui-select-opt {display:block; float:left; width:100%; padding:5px 20px 5px 10px; font-size:13px; height:30px; text-align:left; background:#fff; white-space:nowrap}

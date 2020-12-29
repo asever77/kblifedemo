@@ -654,7 +654,7 @@
             <div class="ui-modal-cont">
                 <div class="item-content">
                     <div class="field-area">
-                        <div class="field-row">
+                        <div class="field-row" data-col="3">
                             <div class="field-col">
                                 <div class="field-item">
                                     <div class="field-item-title">
@@ -687,14 +687,14 @@
                             </div>
                         </div>
 
-                        <div class="field-row">
+                        <div class="field-row" data-col="3">
                             <div class="field-col">
                                 <div class="field-item">
                                     <div class="field-item-title">
                                         <label for="test_m2_a1">통화자성명</label>
                                     </div>
                                     <div class="field-item-content">
-                                        <input type="text" id="test_m_a1" class="inp-base" value="" placeholder="">
+                                        <input type="text" id="test_m2_a1" class="inp-base" value="" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -704,7 +704,7 @@
                                         <label for="test_m2_a2">전화번호</label>
                                     </div>
                                     <div class="field-item-content">
-                                        <input type="text" id="test_m_a2" class="inp-base" value="" placeholder="">
+                                        <input type="text" id="test_m2_a2" class="inp-base" value="" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -719,11 +719,92 @@
                                                 <option>선택</option>
                                             </select>
                                         </div>
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="field-row" data-col="3">
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test_m3_a1">상담유형</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <div class="ui-select">
+                                            <select id="test_m3_a1" title="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test_m3_a2">상담세부코드</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <div class="ui-select">
+                                            <select id="test_m3_a2" title="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test_m3_a3">상담대상</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <div class="ui-select">
+                                            <select id="test_m3_a3" title="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field-row" data-col="1">
+                            <div class="field-col" >
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test_m4_a1">상담내용</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test_m4_a1" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field-row" data-col="3">
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test_m5_a1">약속일자</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test_m5_a1" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test_m3_a2">약속시간</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test_m3_a2" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                     
@@ -740,6 +821,7 @@
 			$(doc).ready(function(){
                 $plugins.uiScrollBar();
                 $plugins.uiCaption();
+                $plugins.uiSelect();
 
                 $plugins.uiTableScroll();
                 

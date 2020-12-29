@@ -45,7 +45,7 @@ body{font-size:14px; overflow: hidden;}
 .item-title .ui-tab-btn.selected{border-bottom:2px solid #f49c00;}
 
 .field-area{width:100%; display:block;}
-.field-row{display:flex; justify-content: space-between;}
+.field-row{display:flex; }
 
 .field-col{display:flex; flex:0 auto;}
 .field-item{width:100%; display: inline-block; font-size:0; margin-top:5px}
@@ -142,12 +142,16 @@ button.group-title:hover {background:#ddd;}
 
 .ui-modal .btn-close{width:30px; height:30px; background:url(../img/modal_close.png) no-repeat 0 0; top:14px; right:24px}
 
-.modal-sample1 .ui-mdoal-wrap{width:800px}
+.modal-sample1 .ui-modal-wrap{width:800px}
 .modal-sample1 .field-row + .field-row{margin-top:10px;}
-.modal-sample1 .field-col{width:33.33%}
+.field-row[data-col="3"] .field-col{width:33.33%}
+.field-row[data-col="1"] .field-col{width:100%}
 .modal-sample1 .field-col + .field-col{margin-left:60px}
 .ui-modal .item-content{padding:40px; border:0}
 .ui-modal-tit span{font-size:28px;}
+
+.field-item-title{width:80px}
+.field-item-content{width:calc(100% - 80px);}
 
 .ui-modal-footer{border:0; text-align: center; padding:0 0 40px;}
 .ui-modal-footer .btn-base{background:#f49c00; color:#fff; border-radius:0; padding:0 35px; font-size:15px; font-weight:500;}
