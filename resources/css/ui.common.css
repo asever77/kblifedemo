@@ -446,4 +446,5 @@ dl.bul-hyphen > div:first-child{margin-top:0;}
 .grid-col[data-col="11"] {flex:1; min-width:calc(((100% / 12) * 11) - 20px); max-width:calc(((100% / 12) * 11) - 20px);}
 .grid-col[data-col="12"] {flex:1; min-width:calc(100% - 20px); max-width:calc(100% - 20px);}
 
+.grid-col .grid-row:first-child {margin-top:0;}
 

@@ -60,9 +60,9 @@
                         <div class="ui-drop-pnl drop-header-pnl" data-id="uiDropCampaign">
                             <div class="ui-drop-box">
                                 <ul>
-                                    <li><button type="button"><span>30-40대</span><span>자동차보험 가입</span></button></li>
-                                    <li><button type="button"><span>40-50대</span><span>자동차보험 가입</span></button></li>
-                                    <li><button type="button"><span>50-60대</span><span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>30-40대</span> <span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>40-50대</span> <span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>50-60대</span> <span>자동차보험 가입</span></button></li>
                                 </ul>
                             </div>
                             <button type="button" class="ui-drop-close btn-close">
@@ -117,9 +117,6 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="none">
-                                                <td colspan="3">내용이 없습니다.</td>
-                                            </tr>
                                             <tr>
                                                 <td>서성진</td>
                                                 <td>19661120</td>
@@ -550,6 +547,7 @@
                                     </div>
 
 
+                                    
                                 </section>
                             </div>
             
@@ -577,12 +575,7 @@
                                                     });"
                                                     ><span>등록</span></button>
 
-                                                    <button type="button" class="btn-base-s" 
-                                                    onclick="$plugins.uiModalOpen({ 
-                                                        id:'modal2', 
-                                                        type: 'normal'
-                                                    });"
-                                                    ><span>조회</span></button>
+                                                    <button type="button" class="btn-base-s"><span>조회</span></button>
                                                 </div>
                                                 <div class="ui-tablescroll tbl-base">
                                                     <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
@@ -839,11 +832,11 @@
         </div>
     </section>
 
-    <!-- 원시모집인 조회 팝업 -->
+    <!-- 원사모집인 조회 팝업 -->
     <section class="ui-modal modal-sample2" id="modal2" role="dialog" aria-hidden="true">
         <div class="ui-modal-wrap">
             <header class="ui-modal-header">
-                <h2 class="ui-modal-tit"><span>원시모집인 조회</span></h2>
+                <h2 class="ui-modal-tit"><span>원사모집인 조회</span></h2>
                 <button type="button" class="ui-modal-close btn-close"><span class="blind">닫기</span></button>
             </header>
             <div class="ui-modal-cont">
@@ -995,6 +988,32 @@
                 $plugins.uiTab({ 
                     id:'exeTab2'
                 }); 
+
+                
+                $plugins.uiDropdown({ 
+                    id:'uiDropCampaign',
+                    ps: 'BL',
+                    hold: true,
+                    dropSpace: $('body'),
+                    dropSrc: false,
+                    dropOffset: false,
+                    openback:function() { console.log('open callback'); },
+                    closeback:function() { console.log('close callback'); } 
+                });
+                
+                $('[data-id="uiDropCampaign"] .ui-drop-box button').on('click', function(){
+                    changeCampaign($(this).html());
+                })
+
+                function changeCampaign(campaignName){
+                    var $currentCampaign = $('.item-header h2');
+
+                    $plugins.uiDropdownToggle({ 
+                        id:'uiDropCampaign',
+                        state: 'close' 
+                    });
+                    $currentCampaign.html(campaignName);
+                }
 
 			});
 		})(jQuery, window, document);

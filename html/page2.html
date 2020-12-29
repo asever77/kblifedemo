@@ -25,7 +25,28 @@
 	<div class="base-wrap" id="baseWrap">
         <div class="frame-wrap">
             <div class="frame-bar">
+                <div class="logo">
+                    <img src="../resources/img/frame_logo.png" alt="한국GA금융서비스">
+                </div>
+                <div class="link">
+                    <div class="ui-select">
+                        <select title="선택">
+                            <option>한국GA금융</option>
+                        </select>
+                    </div>
+                    <div class="ui-select">
+                        <select title="선택">
+                            <option>내부테스트용</option>
+                        </select>
+                    </div>
+                    <input type="text" class="inp-base" value="http://192.168.150.10:8080/IGAS2/intranet.jsp?YOU=YOU">
+                    <button type="button" class="btn-base"><span>연결 &gt;</span></button>
 
+                </div>
+                <div class="util">
+                    <button type="button" class="btn-mini"><span class="blind">최소화</span></button>
+                    <button type="button" class="btn-close"><span class="blind">닫기</span></button>
+                </div>
             </div>
             <div class="frame-inner">
                 <!-- left -->
@@ -39,9 +60,9 @@
                         <div class="ui-drop-pnl drop-header-pnl" data-id="uiDropCampaign">
                             <div class="ui-drop-box">
                                 <ul>
-                                    <li><button type="button"><span>30-40대</span><span>자동차보험 가입</span></button></li>
-                                    <li><button type="button"><span>40-50대</span><span>자동차보험 가입</span></button></li>
-                                    <li><button type="button"><span>50-60대</span><span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>30-40대</span> <span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>40-50대</span> <span>자동차보험 가입</span></button></li>
+                                    <li><button type="button"><span>50-60대</span> <span>자동차보험 가입</span></button></li>
                                 </ul>
                             </div>
                             <button type="button" class="ui-drop-close btn-close">
@@ -96,9 +117,6 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="none">
-                                                <td colspan="3">내용이 없습니다.</td>
-                                            </tr>
                                             <tr>
                                                 <td>서성진</td>
                                                 <td>19661120</td>
@@ -157,310 +175,953 @@
                 <!-- content -->
                 <section class="frame-center ui-scrollbar">
                     <div class="frame-center-top">
-                        <ul class="">
+                        <ul class="breadcrumbs">
+                            <li class="selected">
+                                <b>설계</b>
+                                <button type="button"><span class="blind">삭제</span></button>
+                            </li>
                             <li>
                                 <b>TM</b>
-                                <button type="button" aria-label="삭제"></button>
-                            </li>
-                            <li>
-                                <b>설계</b>
-                                <button type="button" aria-label="삭제"></button>
+                                <button type="button"><span class="blind">삭제</span></button>
                             </li>
                         </ul>
-                        <div class="">
-                            <a href="#"><span class="blind">첫페이지로</span></a>
-                            <a href="#"><span class="blind">첫페이지로</span></a>
+                        <div class="btn-area">
+                            <a href="#" class="btn-home"><span class="blind">시작페이지로</span></a>
+                            <a href="#" class="btn-logout"><span class="blind">로그아웃</span></a>
                         </div>
                     </div>
 
-                    <div class="grid-wrap" data-size="wide">
+                    <div class="grid-wrap">
                         <div class="grid-row">
-
-                            <div class="grid-col" data-col="10">
-                                <div class="grid-row">
-                                    <section class="item-area">
-                                        <div class="item-title">
-                                            <h3>기본사항</h3>
-                                        </div>
-                                        <div class="item-content group-area">
-                                            <div class="group-item type-small">
-                                                <div class="group-title"><strong>기본</strong></div>
-                                                <div class="group-content">
-                                                    <div class="field-area">
-                                                        <div class="field-item">
-                                                            <div class="field-item-title">
-                                                                <label for="select_month">업적월</label>
-                                                            </div>
-                                                            <div class="field-item-content">
-                                                                <div class="ui-select">
-                                                                    <select title="" id="select_month">
-                                                                        <option value="0" selected hidden>선택</option>
-                                                                        <option value="1">1월</option>
-                                                                        <option value="2">2월</option>
-                                                                        <option value="3">3월</option>
-                                                                        <option value="4">4월</option>
-                                                                        <option value="5">5월</option>
-                                                                        <option value="6">6월</option>
-                                                                        <option value="7">7월</option>
-                                                                        <option value="8">8월</option>
-                                                                        <option value="9">9월</option>
-                                                                        <option value="10">10월</option>
-                                                                        <option value="11">11월</option>
-                                                                        <option value="12">12월</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="field-item">
-                                                            <div class="field-item-title">
-                                                                <label for="select_contract">계약구분</label>
-                                                            </div>
-                                                            <div class="field-item-content">
-                                                                <div class="ui-select">
-                                                                    <select title="" id="select_contract">
-                                                                        <option value="0" selected hidden>선택</option>
-                                                                        <option value="1">1월</option>
-                                                                        <option value="2">2월</option>
-                                                                        <option value="3">3월</option>
-                                                                        <option value="4">4월</option>
-                                                                        <option value="5">5월</option>
-                                                                        <option value="6">6월</option>
-                                                                        <option value="7">7월</option>
-                                                                        <option value="8">8월</option>
-                                                                        <option value="9">9월</option>
-                                                                        <option value="10">10월</option>
-                                                                        <option value="11">11월</option>
-                                                                        <option value="12">12월</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="group-item type-large">
-                                                <button type="button" class="group-title"><strong>모집인 <span class="ico-search">검색</span></strong></button>
-                                                <div class="group-content dir-row">
-                                                    <div class="item-area type-flat">
-                                                        <div class="item-title">
-                                                            <h4>지사</h4>
-                                                        </div>
-                                                        <div class="item-content">
-                                                            <div class="field-area">
-                                                                <div class="field-item">
-                                                                    <div class="field-item-title">
-                                                                        <label for="test_a1">본부</label>
-                                                                    </div>
-                                                                    <div class="field-item-content">
-                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="field-item">
-                                                                    <div class="field-item-title">
-                                                                        <label for="test_a1">지사</label>
-                                                                    </div>
-                                                                    <div class="field-item-content">
-                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="field-item">
-                                                                    <div class="field-item-title">
-                                                                        <label for="test_a1">지점</label>
-                                                                    </div>
-                                                                    <div class="field-item-content">
-                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-area type-flat">
-                                                        <div class="item-title">
-                                                            <h4>모집인</h4>
-                                                        </div>
-                                                        <div class="item-content">
-                                                            <div class="field-area">
-                                                                <div class="field-item">
-                                                                    <div class="field-item-title">
-                                                                        <label for="test_a1">사번</label>
-                                                                    </div>
-                                                                    <div class="field-item-content">
-                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="field-item">
-                                                                    <div class="field-item-title">
-                                                                        <label for="test_a1">성명</label>
-                                                                    </div>
-                                                                    <div class="field-item-content">
-                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-area type-flat">
-                                                        <div class="item-title">
-                                                            <h4>원사</h4>
-                                                        </div>
-                                                        <div class="item-content">
-                                                            <div class="field-area">
-                                                                <div class="field-item">
-                                                                    <div class="field-item-title">
-                                                                        <label for="test_a1">회사명</label>
-                                                                    </div>
-                                                                    <div class="field-item-content">
-                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="field-item">
-                                                                    <div class="field-item-title">
-                                                                        <label for="test_a1">모집인</label>
-                                                                    </div>
-                                                                    <div class="field-item-content">
-                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                                <div class="grid-row">
-                                    <section class="item-area">
-                                        <div class="item-title">
-                                            <h3>상품정보</h3>
-                                        </div>
-                                        <div class="item-content">
-
-                                            <div class="group-content">
-                                                <div class="item-area type-flat">
-                                                    <div class="item-title">
-                                                        <h4>주계약</h4>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <div class="ui-tablescroll tbl-base">
-                                                            <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
-                                                                <table>
-                                                                    <caption>
-                                                                        <strong>목록형 기본 테이블</strong>
-                                                                        <p class="ui-caption"></p>
-                                                                    </caption>
-                                                                    <!-- <col style="width:;">
-                                                                    <col style="width:;">
-                                                                    <col style="width:;">
-                                                                    <col style="width:;">
-                                                                    <col style="width:;">
-                                                                    <col style="width:;">
-                                                                    <col style="width:;"> -->
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">성명</th>
-                                                                            <th scope="col">생년월일</th>
-                                                                            <th scope="col">전화번호</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="none">
-                                                                            <td colspan="3">내용이 없습니다.</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>서성진</td>
-                                                                            <td>19661120</td>
-                                                                            <td>010-2546-3256</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>김연실</td>
-                                                                            <td>25681125</td>
-                                                                            <td>010-2589-6985</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>상품종</td>
-                                                                            <td>25686987</td>
-                                                                            <td>010-4589-9856</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>캠페인</td>
-                                                                            <td>32544521</td>
-                                                                            <td>010-3698-5896</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="group-content">
-                                                <div class="item-area type-flat">
-                                                    <div class="item-title">
-                                                        <h4>특약</h4>
-                                                    </div>
-                                                    <div class="item-content">
-                                                        <div class="ui-tablescroll tbl-base">
-                                                            <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
-                                                                <table>
-                                                                    <caption>
-                                                                        <strong>목록형 기본 테이블</strong>
-                                                                        <p class="ui-caption"></p>
-                                                                    </caption>
-                                                                    <col style="width:65px;">
-                                                                    <col style="width:95px;">
-                                                                    <col style="width:auto;">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">성명</th>
-                                                                            <th scope="col">생년월일</th>
-                                                                            <th scope="col">전화번호</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="none">
-                                                                            <td colspan="3">내용이 없습니다.</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>서성진</td>
-                                                                            <td>19661120</td>
-                                                                            <td>010-2546-3256</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>김연실</td>
-                                                                            <td>25681125</td>
-                                                                            <td>010-2589-6985</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>상품종</td>
-                                                                            <td>25686987</td>
-                                                                            <td>010-4589-9856</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>캠페인</td>
-                                                                            <td>32544521</td>
-                                                                            <td>010-3698-5896</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </section>
-                                </div>
-                            </div>
-
-                            <div class="grid-col" data-col="2">
+                            <div class="grid-col" data-col="12">
                                 <section class="item-area">
                                     <div class="item-title">
-                                        <h3>기본정보</h3>
+                                        <h3>기본사항</h3>
+                                    </div>
+                                    <div class="item-content group-area">
+                                        <div class="group-item type-small">
+                                            <div class="group-title"><strong>기본</strong></div>
+                                            <div class="group-content">
+                                                <div class="field-area">
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="select_month">업적월</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="ui-select">
+                                                                <select title="" id="select_month">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">1월</option>
+                                                                    <option value="2">2월</option>
+                                                                    <option value="3">3월</option>
+                                                                    <option value="4">4월</option>
+                                                                    <option value="5">5월</option>
+                                                                    <option value="6">6월</option>
+                                                                    <option value="7">7월</option>
+                                                                    <option value="8">8월</option>
+                                                                    <option value="9">9월</option>
+                                                                    <option value="10">10월</option>
+                                                                    <option value="11">11월</option>
+                                                                    <option value="12">12월</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="select_contract">계약구분</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="ui-select">
+                                                                <select title="" id="select_contract">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">1월</option>
+                                                                    <option value="2">2월</option>
+                                                                    <option value="3">3월</option>
+                                                                    <option value="4">4월</option>
+                                                                    <option value="5">5월</option>
+                                                                    <option value="6">6월</option>
+                                                                    <option value="7">7월</option>
+                                                                    <option value="8">8월</option>
+                                                                    <option value="9">9월</option>
+                                                                    <option value="10">10월</option>
+                                                                    <option value="11">11월</option>
+                                                                    <option value="12">12월</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group-item type-large">
+                                            <button type="button" class="group-title"
+                                                onclick="$plugins.uiModalOpen({ 
+                                                    id:'modal2', 
+                                                    type: 'normal'
+                                                });"
+                                            ><strong>모집인 <span class="ico-search">검색</span></strong></button>
+                                            <div class="group-content dir-row">
+                                                <div class="item-area type-flat">
+                                                    <div class="item-title">
+                                                        <h4>지사</h4>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <div class="field-area">
+                                                            <div class="field-item">
+                                                                <div class="field-item-title">
+                                                                    <label for="test_a1">본부</label>
+                                                                </div>
+                                                                <div class="field-item-content">
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-item">
+                                                                <div class="field-item-title">
+                                                                    <label for="test_a1">지사</label>
+                                                                </div>
+                                                                <div class="field-item-content">
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-item">
+                                                                <div class="field-item-title">
+                                                                    <label for="test_a1">지점</label>
+                                                                </div>
+                                                                <div class="field-item-content">
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-area type-flat">
+                                                    <div class="item-title">
+                                                        <h4>모집인</h4>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <div class="field-area">
+                                                            <div class="field-item">
+                                                                <div class="field-item-title">
+                                                                    <label for="test_a1">사번</label>
+                                                                </div>
+                                                                <div class="field-item-content">
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-item">
+                                                                <div class="field-item-title">
+                                                                    <label for="test_a1">성명</label>
+                                                                </div>
+                                                                <div class="field-item-content">
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-area type-flat">
+                                                    <div class="item-title">
+                                                        <h4>원사</h4>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <div class="field-area">
+                                                            <div class="field-item">
+                                                                <div class="field-item-title">
+                                                                    <label for="test_a1">회사명</label>
+                                                                </div>
+                                                                <div class="field-item-content">
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-item">
+                                                                <div class="field-item-title">
+                                                                    <label for="test_a1">모집인</label>
+                                                                </div>
+                                                                <div class="field-item-content">
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid-row">
+                            <div class="grid-col" data-col="12">
+                                <section class="item-area">
+                                    <div class="item-title">
+                                        <h3>상품정보</h3>
                                     </div>
                                     <div class="item-content">
-                    
+                                        <div class="item-area type-flat">
+                                            <div class="item-title">
+                                                <h4>주계약</h4>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="tbl-base txta-c">
+                                                    <table>
+                                                        <caption>
+                                                            <strong>주계약 관련 정보 테이블</strong>
+                                                            <p class="ui-caption"></p>
+                                                        </caption>
+                                                        <col style="width:29%;">
+                                                        <col style="width:13%;">
+                                                        <col style="width:11%;">
+                                                        <col style="width:11%;">
+                                                        <col style="width:12%;">
+                                                        <col style="width:12%;">
+                                                        <col style="width:12%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">주계약</th>
+                                                                <th scope="col">가입금액</th>
+                                                                <th scope="col">보기</th>
+                                                                <th scope="col">납기</th>
+                                                                <th scope="col">합계보험료</th>
+                                                                <th scope="col">실보험료</th>
+                                                                <th scope="col">환산율</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="ui-select">
+                                                                        <select title="주계약">
+                                                                            <option value="0" selected hidden>선택</option>
+                                                                            <option value="1">00</option>
+                                                                            <option value="2">00</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="ui-select">
+                                                                        <select title="주계약">
+                                                                            <option value="0" selected hidden>선택</option>
+                                                                            <option value="1">00</option>
+                                                                            <option value="2">00</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="ui-select">
+                                                                        <select title="주계약">
+                                                                            <option value="0" selected hidden>선택</option>
+                                                                            <option value="1">00</option>
+                                                                            <option value="2">00</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="ui-select">
+                                                                        <select title="주계약">
+                                                                            <option value="0" selected hidden>선택</option>
+                                                                            <option value="1">00</option>
+                                                                            <option value="2">00</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-area type-flat">
+                                            <div class="item-title">
+                                                <h4>특약</h4>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="ui-tablescroll tbl-base" data-row="4">
+                                                    <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
+                                                        <table>
+                                                            <caption>
+                                                                <strong>특약 관련 정보 테이블</strong>
+                                                                <p class="ui-caption"></p>
+                                                            </caption>
+                                                            <col style="width:29%;">
+                                                            <col style="width:13%;">
+                                                            <col style="width:11%;">
+                                                            <col style="width:11%;">
+                                                            <col style="width:12%;">
+                                                            <col style="width:12%;">
+                                                            <col style="width:12%;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">주계약</th>
+                                                                    <th scope="col">가입금액</th>
+                                                                    <th scope="col">보기</th>
+                                                                    <th scope="col">납기</th>
+                                                                    <th scope="col">합계보험료</th>
+                                                                    <th scope="col">실보험료</th>
+                                                                    <th scope="col">환산율</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="ui-select">
+                                                                            <select title="주계약">
+                                                                                <option value="0" selected hidden>선택</option>
+                                                                                <option value="1">00</option>
+                                                                                <option value="2">00</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid-row">
+                            <div class="grid-col" data-col="12">
+                                <section class="item-area">
+                                    <div class="item-title">
+                                        <h3>계약정보</h3>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="field-area">
+                                            <div class="field-row" data-col="3">
+                                                <div class="field-col">
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="inp_num">증권번호</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="form-validate">
+                                                                <input type="tel" id="inp_num" class="inp-base" value="" placeholder="">
+                                                                <div class="utils">
+                                                                    <butt1on type="button" class="btn-check"><span>체크</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-col">
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="select_payment">납입방법</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="ui-select">
+                                                                <select title="" id="select_payment">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">00</option>
+                                                                    <option value="2">11</option>
+                                                                    <option value="3">22</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-col">
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="select_collect">수금방법</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="ui-select">
+                                                                <select title="" id="select_collect">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">00</option>
+                                                                    <option value="2">11</option>
+                                                                    <option value="3">22</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field-row" data-col="3">
+                                                <div class="field-col">
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="date_first_reception">초회영수일</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="ui-datepicker" id="uiDatePicker1" data-dual="false" data-title="초회영수일">
+                                                                <input class="ui-datepicker-inp inp-base" type="tel" value="" data-min="2020-01-01" data-max="2020-12-31" title="시작일" id="date_first_reception">
+                                                                <button type="button" class="ui-datepicker-btn" aria-label="시작일 선택"></button>
+                                                                <div class="ui-datepicker-wrap"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-col">
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="inp1contract_date">계약일</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="form-validate">
+                                                                <input type="tel" id="inp_contract_date" class="inp-base" value="" placeholder="">
+                                                                <div class="utils">
+                                                                    <input type="checkbox" id="chk_contract_date">
+                                                                    <label for="chk_contract_date" class="lb-check"><span class="hide">계약일 선택</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field-col">
+                                                    <div class="field-item">
+                                                        <div class="field-item-title">
+                                                            <label for="date_expiration">만기일</label>
+                                                        </div>
+                                                        <div class="field-item-content">
+                                                            <div class="ui-datepicker" id="uiDatePicker2" data-dual="false" data-title="만기일">
+                                                                <input class="ui-datepicker-inp inp-base" type="tel" value="" data-min="2020-01-01" data-max="2020-12-31" title="시작일" id="date_expiration">
+                                                                <button type="button" class="ui-datepicker-btn" aria-label="시작일 선택"></button>
+                                                                <div class="ui-datepicker-wrap"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid-row">
+                            <div class="grid-col" data-col="12">
+                                <section class="item-area">
+                                    <div class="item-title">
+                                        <h3>환산성적</h3>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="btn-area">
+                                            <button type="button" class="btn-base-s"><span>확인</span></button>
+                                        </div>
+                                        <div class="tbl-base txta-c">
+                                            <table>
+                                                <caption>
+                                                    <strong>환산성적 관련 테이블</strong>
+                                                    <p class="ui-caption"></p>
+                                                </caption>
+                                                <col style="width:25%;">
+                                                <col style="width:25%;">
+                                                <col style="width:25%;">
+                                                <col style="width:25%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">원사초년H</th>
+                                                        <th scope="col">원사차년H</th>
+                                                        <th scope="col">당사초년H</th>
+                                                        <th scope="col">당사차년H</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="text" id="inp_score1" class="inp-base" value="" placeholder="" title="원사초년H">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="inp_score2" class="inp-base" value="" placeholder="" title="원사차년H">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="inp_score3" class="inp-base" value="" placeholder="" disabled title="당사초년H">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="inp_score4" class="inp-base" value="" placeholder="" disabled title="당사차년H">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid-row">
+                            <div class="grid-col" data-col="12">
+                                <section class="item-area">
+                                    <div class="item-title">
+                                        <h3>계약자&middot;피보험자 정보</h3>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="tbl-base txta-c">
+                                            <table>
+                                                <caption>
+                                                    <strong>주계약 관련 정보 테이블</strong>
+                                                    <p class="ui-caption"></p>
+                                                </caption>
+                                                <col style="width:20%;">
+                                                <col style="width:30%;">
+                                                <col style="width:20%;">
+                                                <col style="width:10%;">
+                                                <col style="width:20%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">고객정보</th>
+                                                        <th scope="col">주민번호</th>
+                                                        <th scope="col">성명</th>
+                                                        <th scope="col">연령</th>
+                                                        <th scope="col">피보험자와의관계</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">계약자</th>
+                                                        <td>
+                                                            <div class="form-validate">
+                                                                <input type="tel" id="inp_num" class="inp-base" value="" placeholder="">
+                                                                <div class="utils">
+                                                                    <butt1on type="button" class="btn-search-s"><span class="blind">체크</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tel" id="test_a1" class="inp-base" value="" placeholder="" maxlength="3">
+                                                        </td>
+                                                        <td>
+                                                            <div class="ui-select">
+                                                                <select title="주계약">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">00</option>
+                                                                    <option value="2">00</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">피보험자
+                                                            <input type="checkbox" id="chk_insured_person">
+                                                            <label for="chk_insured_person" class="lb-check mgl-xxxs"><span class="hide">선택</span></label>
+                                                        </th>
+                                                        <td>
+                                                            <div class="form-validate">
+                                                                <input type="tel" id="inp_num" class="inp-base" value="" placeholder="">
+                                                                <div class="utils">
+                                                                    <butt1on type="button" class="btn-search-s"><span class="blind">체크</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tel" id="test_a1" class="inp-base" value="" placeholder="" maxlength="3">
+                                                        </td>
+                                                        <td>
+                                                            <div class="ui-select">
+                                                                <select title="주계약">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">00</option>
+                                                                    <option value="2">00</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">종피보험자1</th>
+                                                        <td>
+                                                            <div class="form-validate">
+                                                                <input type="tel" id="inp_num" class="inp-base" value="" placeholder="">
+                                                                <div class="utils">
+                                                                    <butt1on type="button" class="btn-search-s"><span class="blind">체크</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tel" id="test_a1" class="inp-base" value="" placeholder="" maxlength="3">
+                                                        </td>
+                                                        <td>
+                                                            <div class="ui-select">
+                                                                <select title="주계약">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">00</option>
+                                                                    <option value="2">00</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">종피보험자2</th>
+                                                        <td>
+                                                            <div class="form-validate">
+                                                                <input type="tel" id="inp_num" class="inp-base" value="" placeholder="">
+                                                                <div class="utils">
+                                                                    <butt1on type="button" class="btn-search-s"><span class="blind">체크</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="test_a1" class="inp-base" value="" placeholder="">
+                                                        </td>
+                                                        <td>
+                                                            <input type="tel" id="test_a1" class="inp-base" value="" placeholder="" maxlength="3">
+                                                        </td>
+                                                        <td>
+                                                            <div class="ui-select">
+                                                                <select title="주계약">
+                                                                    <option value="0" selected hidden>선택</option>
+                                                                    <option value="1">00</option>
+                                                                    <option value="2">00</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="grid-row">
+                            <div class="grid-col" data-col="12">
+                                <section class="item-area">
+                                    <div class="ui-tab" id="exeTab1">
+                                        <div class="item-title ui-tab-btns">
+                                            <div class="btn-wrap">
+                                                <button type="button" class="ui-tab-btn"><i>html</i></button>
+                                                <button type="button" class="ui-tab-btn"><i>이미지</i></button>
+                                                <button type="button" class="ui-tab-btn"><i>파일</i></button>
+                                            </div>
+                                        </div>
+                                        <div class="item-content ui-tab-pnls" style="height:600px;">
+                                            <section class="ui-tab-pnl">
+                                                <h3 class="blind">html</h3>
+                                            </section>
+                                            <section class="ui-tab-pnl">
+                                                <h3 class="blind">이미지</h3>
+                                                <div class="img-wrap" style="max-width:500px">
+                                                    <img src="../resources/img/@temp/@product_img.jpg" alt="">
+                                                </div>
+                                            </section>
+                                            <section class="ui-tab-pnl">
+                                                <h3 class="blind">파일</h3>
+                                                <div class="tbl-base txta-c">
+                                                    <table>
+                                                        <caption>
+                                                            <strong>파일 관련 테이블</strong>
+                                                            <p class="ui-caption"></p>
+                                                        </caption>
+                                                        <col style="width:33.333%;">
+                                                        <col style="width:33.333%;">
+                                                        <col style="width:33.333%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">상품 요약서</th>
+                                                                <th scope="col">사업 방법서</th>
+                                                                <th scope="col">약관</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#">상품 요약서</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">사업 방법서</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">약관</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </section>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -489,6 +1150,143 @@
             </div>
         </div>
     </div>
+    <!-- 원사모집인 조회 팝업 -->
+    <section class="ui-modal modal-sample2" id="modal2" role="dialog" aria-hidden="true">
+        <div class="ui-modal-wrap">
+            <header class="ui-modal-header">
+                <h2 class="ui-modal-tit"><span>원사모집인 조회</span></h2>
+                <button type="button" class="ui-modal-close btn-close"><span class="blind">닫기</span></button>
+            </header>
+            <div class="ui-modal-cont">
+                <div class="item-content">
+                    <div class="search-area">
+                        <input type="search" class="inp-search">
+                        <button type="button" class="btn-search"><span class="blind">검색</span></button>
+                    </div>
+
+                    <div class="field-area">
+                        <div class="field-row" data-col="4">
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a1">모집인원</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a1" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a2">사원코드</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a2" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a3">원사코드</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a3" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m2_a3">회사구분</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <div class="ui-select">
+                                            <select id="test2_m2_a3" title="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="ui-tablescroll tbl-base">
+                        <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
+                            <table>
+                                <caption>
+                                    <strong>원사모집인 조회 결과</strong>
+                                    <span class="ui-caption"></span>
+                                </caption>
+                                <col style="width:60px;">
+                                <col style="width:80px;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">본부</th>
+                                        <th scope="col">지사</th>
+                                        <th scope="col">지점</th>
+                                        <th scope="col">모집인명</th>
+                                        <th scope="col">모집인코드</th>
+                                        <th scope="col">원사명</th>
+                                        <th scope="col">원사코드</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="none">
+                                        <td colspan="7">조회된 원사모집인 정보가 없습니다.</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tbl-footer">
+                        <div class="ui-select">
+                            <select title="페이지 바로가기">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="paging-area">
+                            <button type="button" class="paging-first"><span class="blind">첫페이지</span></button>
+                            <button type="button" class="paging-prev"><span class="blind">이전페이지</span></button>
+
+                            <button type="button" class="selected"><span>1</span></button>
+                            <button type="button"><span>2</span></button>
+                            <button type="button"><span>3</span></button>
+                            <button type="button"><span>4</span></button>
+                            <button type="button"><span>5</span></button>
+                            <button type="button"><span>6</span></button>
+                            <button type="button"><span>7</span></button>
+                            <button type="button"><span>8</span></button>
+                            <button type="button"><span>9</span></button>
+                            <button type="button"><span>10</span></button>
+
+                            <button type="button" class="paging-next"><span class="blind">다음페이지</span></button>
+                            <button type="button" class="paging-last"><span class="blind">마지막페이지</span></button>
+                        </div>
+                    </div>
+
+                </div>
+                    
+
+            </div>
+
+        </div>
+    </section>
 
     <script>
         ;(function($, win, doc, undefined) {
@@ -512,6 +1310,35 @@
                     dropOffset: false,
                     openback:function() { console.log('open callback'); },
                     closeback:function() { console.log('close callback'); } 
+                });
+                
+                $('[data-id="uiDropCampaign"] .ui-drop-box button').on('click', function(){
+                    changeCampaign($(this).html());
+                })
+
+                function changeCampaign(campaignName){
+                    var $currentCampaign = $('.item-header h2');
+
+                    $plugins.uiDropdownToggle({ 
+                        id:'uiDropCampaign',
+                        state: 'close' 
+                    });
+                    $currentCampaign.html(campaignName);
+                }
+
+                $plugins.uiDatePicker({ 
+                    selector: '.ui-datepicker', // '#uiDatePicker1'
+                    dual: false,
+                    period: false,
+                    title: false, //'datepicker title'
+                    date_split: '-', //'.'
+                    shortDate: false, //false:YYYYMMDD or true:DDMMYYYY
+                    dateMonths: new Array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'),
+                    weekDay: new Array('일', '월', '화', '수', '목', '금', '토'),
+
+                    callback: function(v){ console.log(v); },
+                    openback: function(){ console.log('open callback'); },
+                    closeback: function(){ console.log('close callback'); }
                 });
 			});
 		})(jQuery, window, document);
