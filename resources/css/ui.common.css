@@ -289,10 +289,6 @@ input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
-
-
-출처: https://mrkn.tistory.com/349 [머라카노?]
-
 /* [base] BOX ---------------------------------------------------------------------------*/
 .box-base {position:relative; width:100%; padding:18px 20px 20px; background:#f6f6f6; border:1px solid #f2f2f2;}
 
