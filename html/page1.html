@@ -541,7 +541,7 @@
 
                         <div class="grid-row">
                             <div class="grid-col" data-col="12">
-                                <section class="item-area">
+                                <div class="item-area">
                                     <div class="ui-tab" id="exeTab2">
                                         <div class="item-title ui-tab-btns">
                                             <div class="btn-wrap">
@@ -560,6 +560,13 @@
                                                         type: 'normal'
                                                     });"
                                                     ><span>등록</span></button>
+
+                                                    <button type="button" class="btn-base-s" 
+                                                    onclick="$plugins.uiModalOpen({ 
+                                                        id:'modal2', 
+                                                        type: 'normal'
+                                                    });"
+                                                    ><span>조회</span></button>
                                                 </div>
                                                 <div class="ui-tablescroll tbl-base">
                                                     <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
@@ -614,12 +621,10 @@
                                             </section>
                                         </div>
                                     </div>
-
-
-                                </section>
+                                </div>
                             </div>
-            
                         </div>
+
                     </div>
                     
 
@@ -645,6 +650,7 @@
         </div>
     </div>
 
+    <!-- 상담이력등록 팝업 -->
     <section class="ui-modal modal-sample1" id="modal1" role="dialog" aria-hidden="true">
         <div class="ui-modal-wrap">
             <header class="ui-modal-header">
@@ -816,6 +822,146 @@
             </div>
         </div>
     </section>
+
+    <!-- 원시모집인 조회 팝업 -->
+    <section class="ui-modal modal-sample2" id="modal2" role="dialog" aria-hidden="true">
+        <div class="ui-modal-wrap">
+            <header class="ui-modal-header">
+                <h2 class="ui-modal-tit"><span>원시모집인 조회</span></h2>
+                <button type="button" class="ui-modal-close btn-close"><span class="blind">닫기</span></button>
+            </header>
+            <div class="ui-modal-cont">
+                <div class="item-content">
+                    <div class="search-area">
+                        <input type="search" class="inp-search">
+                        <button type="button" class="btn-search"><span class="blind">검색</span></button>
+                    </div>
+
+                    <div class="field-area">
+                        <div class="field-row" data-col="4">
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a1">모집인원</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a1" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a2">사원코드</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a2" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a3">원사코드</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a3" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m2_a3">회사구분</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <div class="ui-select">
+                                            <select id="test2_m2_a3" title="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="ui-tablescroll tbl-base">
+                        <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
+                            <table>
+                                <caption>
+                                    <strong>원사모집인 조회 결과</strong>
+                                    <span class="ui-caption"></span>
+                                </caption>
+                                <col style="width:60px;">
+                                <col style="width:80px;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">본부</th>
+                                        <th scope="col">지사</th>
+                                        <th scope="col">지점</th>
+                                        <th scope="col">모집인명</th>
+                                        <th scope="col">모집인코드</th>
+                                        <th scope="col">원사명</th>
+                                        <th scope="col">원사코드</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="none">
+                                        <td colspan="7">조회된 원사모집인 정보가 없습니다.</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tbl-footer">
+                        <div class="ui-select">
+                            <select title="페이지 바로가기">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="paging-area">
+                            <button type="button" class="paging-first"><span class="blind">첫페이지</span></button>
+                            <button type="button" class="paging-prev"><span class="blind">이전페이지</span></button>
+
+                            <button type="button" class="selected"><span>1</span></button>
+                            <button type="button"><span>2</span></button>
+                            <button type="button"><span>3</span></button>
+                            <button type="button"><span>4</span></button>
+                            <button type="button"><span>5</span></button>
+                            <button type="button"><span>6</span></button>
+                            <button type="button"><span>7</span></button>
+                            <button type="button"><span>8</span></button>
+                            <button type="button"><span>9</span></button>
+                            <button type="button"><span>10</span></button>
+
+                            <button type="button" class="paging-next"><span class="blind">다음페이지</span></button>
+                            <button type="button" class="paging-last"><span class="blind">마지막페이지</span></button>
+                        </div>
+                    </div>
+
+                </div>
+                    
+
+            </div>
+
+        </div>
+    </section>
+
+
 
     <script>
         ;(function($, win, doc, undefined) {

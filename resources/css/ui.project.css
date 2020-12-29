@@ -143,21 +143,39 @@ button.group-title:hover {background:#ddd;}
 .ui-modal .btn-close{width:30px; height:30px; background:url(../img/modal_close.png) no-repeat 0 0; top:14px; right:24px}
 
 .modal-sample1 .ui-modal-wrap{width:800px}
+.modal-sample2 .ui-modal-wrap{width:800px}
+
 .modal-sample1 .field-row + .field-row{margin-top:10px;}
+.field-row[data-col="4"] .field-col{width:25%;}
 .field-row[data-col="3"] .field-col{width:33.33%;}
 .field-row[data-col="1"] .field-col{width:100%}
 .modal-sample1 .field-col + .field-col{margin-left:60px}
-.ui-modal .item-content{padding:40px; border:0}
-.ui-modal-tit span{font-size:28px;}
+.modal-sample2 .field-col + .field-col{margin-left:20px}
+.ui-modal .item-content{padding:0 40px 40px; border:0}
+.ui-modal-tit span{font-size:28px; font-weight:500;}
 
-.field-item-title{width:80px}
-.field-item-content{width:calc(100% - 80px);}
+.modal-sample1 .field-item-title{width:80px}
+.modal-sample1 .field-item-content{width:calc(100% - 80px);}
 
+
+.modal-sample2 .field-item-title{width:60px}
+.modal-sample2 .field-item-content{width:calc(100% - 60px);}
+.modal-sample2 .field-area{margin-bottom:10px;}
 .ui-modal-footer{border:0; text-align: center; padding:0 0 40px;}
 .ui-modal-footer .btn-base{background:#f49c00; color:#fff; border-radius:0; padding:0 35px; font-size:15px; font-weight:500;}
 
+.search-area{position:relative; width:300px; margin:0 auto 30px;}
+.inp-search{border:0; border-bottom:2px solid #222; height:50px; width:100%; font-size:20px; padding-right:40px;}
+.btn-search{background:url(../img/btn-search.png) no-repeat 0 0; width:40px; height:40px; position:absolute; right:0; bottom:5px;}
 
-
-
+.tbl-footer{position:relative; text-align: center; padding:15px 0 0;}
+.tbl-footer .ui-select{position:absolute; top:10px; left:0;}
+.paging-area{display:block; margin:0 auto;}
+.paging-area button{width:20px; height:20px; display:inline-block; vertical-align: middle; line-height:1; color:#a1a1a1;}
+.paging-area .selected{text-decoration: underline;}
+.paging-first{background:url(../img/sp_paging.png) no-repeat -20px 0;}
+.paging-prev{background:url(../img/sp_paging.png) no-repeat 0 0;}
+.paging-next{background:url(../img/sp_paging.png) no-repeat -20px -20px;}
+.paging-last{background:url(../img/sp_paging.png) no-repeat 0 -20px;}
 
 
