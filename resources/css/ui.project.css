@@ -101,6 +101,7 @@ button.group-title:hover {background:#ddd;}
 .ui-tablescroll[data-row="4"] .ui-tablescroll-wrap {height:204px; }
 .tbl-base .ui-select {width:100%;}
 .tbl-base .lb-check{min-height:0; vertical-align:middle; margin-top:-2px;}
+.tbl-base table > tbody > tr > th {text-align:left;}
 
 /* box */
 .box-base {padding:18px 20px 20px; border:1px solid #f2f2f2; background:#f6f6f6;}
