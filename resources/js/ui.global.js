@@ -1536,7 +1536,7 @@ if (!Object.keys){
 		callback:false
 	};
 	function createUiTableScroll(opt){
-		var opt = $.extend(true, {}, win[global].uiAccordion.option, opt);
+		var opt = $.extend(true, {}, win[global].uiTableScroll.option, opt);
 		var callback = opt.callback;
 		var $tblWrap = $('.ui-tablescroll');
 
