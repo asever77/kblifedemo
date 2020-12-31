@@ -49,6 +49,7 @@
             <div class="frame-inner">
                 <!-- left -->
                 <section class="frame-left">
+                    <button type="button" class="btn-switch"><span>엥</span></button>
                     <section class="item-area item-header">
                         <a href="javascript:void(0);" class="ui-drop drop-header" id="uiDropCampaign">
                             <h2>
@@ -175,12 +176,12 @@
                     <div class="frame-center-top">
                         <ul class="breadcrumbs">
                             <li class="selected">
-                                <b>설계</b>
-                                <button type="button"><span class="blind">삭제</span></button>
+                                <button type="button" class="btn-tit"><span>설계</span></button>
+                                <button type="button" class="btn-del"><span class="blind">삭제</span></button>
                             </li>
                             <li>
-                                <b>TM</b>
-                                <button type="button"><span class="blind">삭제</span></button>
+                                <button type="button" class="btn-tit"><span>TM</span></button>
+                                <button type="button" class="btn-del"><span class="blind">삭제</span></button>
                             </li>
                         </ul>
                         <div class="btn-area">
@@ -1298,6 +1299,15 @@
 				$plugins.uiTab({ 
                     id:'exeTab1'
                 }); 
+
+                $('.btn-switch').on('click', function(){
+                    if ($('body').hasClass('minimize')) {
+                        $('body').removeClass('minimize');
+                    } else {
+                        $('body').addClass('minimize');
+                    }
+                   
+                });
 
                 $plugins.uiDropdown({ 
                     id:'uiDropCampaign',
