@@ -23,7 +23,7 @@
 	<div class="base-wrap" id="baseWrap">
         <div class="frame-wrap">
             <div class="frame-bar">
-                <div class="logo">
+                <!-- <div class="logo">
                     <img src="../resources/img/frame_logo.png" alt="한국GA금융서비스">
                 </div>
                 <div class="link">
@@ -44,11 +44,12 @@
                 <div class="util">
                     <button type="button" class="btn-mini"><span class="blind">최소화</span></button>
                     <button type="button" class="btn-close"><span class="blind">닫기</span></button>
-                </div>
+                </div> -->
             </div>
             <div class="frame-inner">
                 <!-- left -->
                 <section class="frame-left">
+                    <button type="button" class="btn-switch"><span>엥</span></button>
                     <section class="item-area item-header">
                         <a href="javascript:void(0);" class="ui-drop drop-header" id="uiDropCampaign">
                             <h2>
@@ -985,7 +986,15 @@
                 $plugins.uiTab({ 
                     id:'exeTab2'
                 }); 
-
+                
+                $('.btn-switch').on('click', function(){
+                    if ($('body').hasClass('minimize')) {
+                        $('body').removeClass('minimize');
+                    } else {
+                        $('body').addClass('minimize');
+                    }
+                   
+                });
                 
                 $plugins.uiDropdown({ 
                     id:'uiDropCampaign',
