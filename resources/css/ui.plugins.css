@@ -276,6 +276,8 @@ a.ui-acco-btn:after {content:"keyboard_arrow_right";}
 .view-y > .ui-scrollbar-barwrap.type-y{display:block; }
 .view-x > .ui-scrollbar-barwrap.type-x{display:block; }
 
+.ui-tablescroll-wrap .ui-scrollbar-barwrap.type-y { top:40px; height:auto; bottom:0; }
+
 
 /* ui scroll box : base */
 .ui-parallax-item {position:relative;}

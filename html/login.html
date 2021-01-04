@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<title>로그인 : kb생명</title>
+
+	<link rel="apple-touch-icon" href="../resources/img/common/ico_app.png" >
+	<link rel="shortcut icon" href="../resources/img/common/ico_favicon.ico"> 
+
+	<link rel="stylesheet" href="../resources/css/ui.base.css">
+
+	<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="../resources/js/ui.global.min.js"></script>
+
+
+<body>
+	<div class="base-wrap" id="baseWrap">
+        <div class="frame-wrap">
+            <div class="frame-bar"></div>
+            <div class="frame-inner">
+                <!-- content -->
+                <section class="login-area">
+                    <div class="login-header">
+                        <h2>로그인</h2>
+                        <span class="logo-area"><img src="../resources/img/logo_mini.png" alt="">한국GA금융서비스 업무시스템</span>
+                    </div>
+                    <div class="login-cont">
+                        <div class="field-area">
+                            <div class="field-item type-full">
+                                <div class="field-item-title">
+                                    <label for="test_a1" class="ico-id">사번</label>
+                                </div>
+                                <div class="field-item-content">
+                                    <input type="tel" id="test_a1" class="inp-base" value="" placeholder="사번">
+                                </div>
+                            </div>
+                            <div class="field-item type-full">
+                                <div class="field-item-title">
+                                    <label for="test_a2" class="ico-pw">비밀번호</label>
+                                </div>
+                                <div class="field-item-content">
+                                    <input type="password" id="test_a2" class="inp-base" value="" placeholder="비밀번호">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-area">
+                            <a href="./page1.html" class="btn-base-l type-primary"><span>로그인</span></a>
+                        </div>
+
+                        <a href="#" class="btn-notice"><span>계정정보 문의</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- 원사모집인 조회 팝업 -->
+    <section class="ui-modal modal-sample2" id="modal2" role="dialog" aria-hidden="true">
+        <div class="ui-modal-wrap">
+            <header class="ui-modal-header">
+                <h2 class="ui-modal-tit"><span>원사모집인 조회</span></h2>
+                <button type="button" class="ui-modal-close btn-close"><span class="blind">닫기</span></button>
+            </header>
+            <div class="ui-modal-cont">
+                <div class="item-content">
+                    <div class="search-area">
+                        <input type="search" class="inp-search">
+                        <button type="button" class="btn-search"><span class="blind">검색</span></button>
+                    </div>
+
+                    <div class="field-area">
+                        <div class="field-row" data-col="4">
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a1">모집인원</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a1" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a2">사원코드</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a2" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m_a3">원사코드</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <input type="text" id="test2_m_a3" class="inp-base" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field-col">
+                                <div class="field-item">
+                                    <div class="field-item-title">
+                                        <label for="test2_m2_a3">회사구분</label>
+                                    </div>
+                                    <div class="field-item-content">
+                                        <div class="ui-select">
+                                            <select id="test2_m2_a3" title="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="ui-tablescroll tbl-base">
+                        <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
+                            <table>
+                                <caption>
+                                    <strong>원사모집인 조회 결과</strong>
+                                    <span class="ui-caption"></span>
+                                </caption>
+                                <col style="width:60px;">
+                                <col style="width:80px;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">본부</th>
+                                        <th scope="col">지사</th>
+                                        <th scope="col">지점</th>
+                                        <th scope="col">모집인명</th>
+                                        <th scope="col">모집인코드</th>
+                                        <th scope="col">원사명</th>
+                                        <th scope="col">원사코드</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="none">
+                                        <td colspan="7">조회된 원사모집인 정보가 없습니다.</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tbl-footer">
+                        <div class="ui-select">
+                            <select title="페이지 바로가기">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="paging-area">
+                            <button type="button" class="paging-first"><span class="blind">첫페이지</span></button>
+                            <button type="button" class="paging-prev"><span class="blind">이전페이지</span></button>
+
+                            <button type="button" class="selected"><span>1</span></button>
+                            <button type="button"><span>2</span></button>
+                            <button type="button"><span>3</span></button>
+                            <button type="button"><span>4</span></button>
+                            <button type="button"><span>5</span></button>
+                            <button type="button"><span>6</span></button>
+                            <button type="button"><span>7</span></button>
+                            <button type="button"><span>8</span></button>
+                            <button type="button"><span>9</span></button>
+                            <button type="button"><span>10</span></button>
+
+                            <button type="button" class="paging-next"><span class="blind">다음페이지</span></button>
+                            <button type="button" class="paging-last"><span class="blind">마지막페이지</span></button>
+                        </div>
+                    </div>
+
+                </div>
+                    
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        ;(function($, win, doc, undefined) {
+			$(doc).ready(function(){
+                $plugins.uiScrollBar();
+
+                //$plugins.uiSelect();
+
+                $plugins.uiTableScroll();
+                
+				$plugins.uiTab({ 
+                    id:'exeTab1'
+                }); 
+
+                $('.btn-switch').on('click', function(){
+                    if ($('body').hasClass('minimize')) {
+                        $('body').removeClass('minimize');
+                    } else {
+                        $('body').addClass('minimize');
+                    }
+                   
+                });
+
+                $plugins.uiDropdown({ 
+                    id:'uiDropCampaign',
+                    ps: 'BL',
+                    hold: true,
+                    dropSpace: $('body'),
+                    dropSrc: false,
+                    dropOffset: false,
+                    openback:function() { console.log('open callback'); },
+                    closeback:function() { console.log('close callback'); } 
+                });
+                
+                $('[data-id="uiDropCampaign"] .ui-drop-box button').on('click', function(){
+                    changeCampaign($(this).html());
+                })
+
+                function changeCampaign(campaignName){
+                    var $currentCampaign = $('.item-header h2');
+
+                    $plugins.uiDropdownToggle({ 
+                        id:'uiDropCampaign',
+                        state: 'close' 
+                    });
+                    $currentCampaign.html(campaignName);
+                }
+
+                $plugins.uiDatePicker({ 
+                    selector: '.ui-datepicker', // '#uiDatePicker1'
+                    dual: false,
+                    period: false,
+                    title: false, //'datepicker title'
+                    date_split: '-', //'.'
+                    shortDate: false, //false:YYYYMMDD or true:DDMMYYYY
+                    dateMonths: new Array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'),
+                    weekDay: new Array('일', '월', '화', '수', '목', '금', '토'),
+
+                    callback: function(v){ console.log(v); },
+                    openback: function(){ console.log('open callback'); },
+                    closeback: function(){ console.log('close callback'); }
+                });
+			});
+		})(jQuery, window, document);
+		
+	</script>
+</body>
+</html>

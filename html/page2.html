@@ -27,23 +27,21 @@
                     <img src="../resources/img/frame_logo.png" alt="한국GA금융서비스">
                 </div>
                 <div class="link">
-                    <div class="ui-select">
-                        <select title="선택">
-                            <option>한국GA금융</option>
-                        </select>
-                    </div>
-                    <div class="ui-select">
-                        <select title="선택">
-                            <option>내부테스트용</option>
-                        </select>
-                    </div>
-                    <input type="text" class="inp-base" value="http://192.168.150.10:8080/IGAS2/intranet.jsp?YOU=YOU">
-                    <button type="button" class="btn-base"><span>연결 &gt;</span></button>
-
+                    <span>연결상태:통화중</span>
+                    <strong>010-1234-5678</strong>
                 </div>
                 <div class="util">
-                    <button type="button" class="btn-mini"><span class="blind">최소화</span></button>
-                    <button type="button" class="btn-close"><span class="blind">닫기</span></button>
+                    <dl class="info">
+                        <div>
+                            <dt><i class="ico-user">이름</i></dt>
+                            <dd>홍길동</dd>
+                        </div>
+                        <div>
+                            <dt class="blind">사번</dt>
+                            <dd>293948290</dd>
+                        </div>
+                    </dl>
+                    <button type="button" class="btn-base-s"><span><i class="ico-logout"></i>로그아웃</span></button>
                 </div>
             </div>
             <div class="frame-inner">
@@ -69,14 +67,19 @@
                             </button>
                         </div>
                         <div class="call-area">
-                            <div class="call-status">
-                                <a href="tel:000-0000" class="outgoing">전화 걸기</a>
-                                <a href="tel:000-0000" class="incoming">전화 받기</a>
+                            <button type="button" class="btn-txt"><span><i class="ico-login"></i>전화업무 로그인</span></button>
+                            <div class="call-act">
+                                <a href="tel:000-0000" class="outgoing">전화걸기</a>
+                                <a href="tel:000-0000" class="incoming">전화받기</a>
                             </div>
-                            <div class="call-utils">
-                                <button type="button" class="btn-base-s"><span>휴식</span></button>
-                                <button type="button" class="btn-base-s"><span>전화끊기</span></button>
-                                <button type="button" class="btn-base-s"><span>대기</span></button>
+                            <div class="call-util">
+                                <button type="button" class="btn-base type-flat"><span>대기</span></button>
+                                <button type="button" class="btn-base type-flat"><span>전화끊기</span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn-base"><span>후처리</span></button>
+                                <button type="button" class="btn-base"><span>이석</span></button>
+                                <button type="button" class="btn-base"><span>외근</span></button>
                             </div>
                         </div>
                         <!-- <div class="box-base">
@@ -101,20 +104,20 @@
                         <div class="item-content">
                             <dl class="data-area">
                                 <div>
-                                    <dt>당일콜건수</dt>
+                                    <dt><i class="ico-document"></i>당일콜건수</dt>
                                     <dd><span>24</span> 건</dd>
                                 </div>
                                 <div>
-                                    <dt>당일콜시간</dt>
+                                    <dt><i class="ico-clock"></i>당일콜시간</dt>
                                     <dd><span></span> </dd>
                                 </div>
                                 <div>
-                                    <dt>일계약건수</dt>
+                                    <dt><i class="ico-contract"></i>일계약건수</dt>
                                     <dd><span>5</span> 건</dd>
                                 </div>
                                 <div>
-                                    <dt>일계약금액</dt>
-                                    <dd><span>20,000</span> 원</dd>
+                                    <dt><i class="ico-notice"></i>캠페인</dt>
+                                    <dd><span>32544521</span> <span>010-3698-5896</span></dd>
                                 </div>
                             </dl>
                         </div>
