@@ -21,7 +21,7 @@ body{font-size:14px; overflow: hidden;}
 .frame-bar .util .info div:before {display:inline-block; vertical-align:middle; width:1px; height:10px; background:#c4c2bf; margin:0 5px; content:"";}
 .frame-bar .util .info div:first-child:before {display:none;}
 /* .frame-bar .logo{margin-top:7px} */
-.frame-inner{border:1px solid #dbd9d5; width:100%; height:calc(100vh - 33px); background-color:#f9f9f9; position:relative}
+.frame-inner{width:100%; height:calc(100vh - 33px); background-color:#f9f9f9; position:relative}
 .frame-inner::after{content:""; display:block; clear:both;}
 .frame-right{position: absolute;; right:0; top:0; width:92px; height:100%; background-color:#fff; text-align:center; padding:26px 0; box-shadow:0 0 10px rgba(0,0,0,0.1); z-index: 2;}
 .frame-right nav {margin-top:50px;}
@@ -31,7 +31,7 @@ body{font-size:14px; overflow: hidden;}
 .minimize .btn-switch{left:5px; }
 .minimize .frame-left{left:-320px; }
 .minimize .frame-center{width:calc(100% - 92px); margin-left:0; }
-.frame-left{position: absolute; left:0; top:0; display:flex; flex-direction:column; justify-content:space-between; width:320px; height:100%; background-color:#fff; height:100%; padding:15px 20px 30px; z-index: 2; transition:left .2s ease-out;}
+.frame-left{position: absolute; left:0; top:0; display:flex; flex-direction:column; justify-content:space-between; width:320px; height:100%; background-color:#fff; height:100%; padding:15px 20px 30px; z-index: 2; transition:left .2s ease-out; box-shadow:0 -4px 15px rgba(0,0,0,0.08);}
 .frame-center{width:calc(100% - 412px); max-height:calc(100vh - 33px); overflow-y:auto; position: relative; z-index:0; float:left; margin-left:320px; transition:width .2s ease-out, margin .2s ease-out;}
 
 .btn-switch{width:30px; height:60px; position:fixed; top:40px; left:327px; z-index:2; background:linear-gradient(to right, #e1e1e1 0% , #e5e5e5 100%); color:transparent; transition:left .2s ease-out;}
@@ -144,11 +144,11 @@ button.group-title:hover {background:#ddd;}
 
 .type-y .ui-scrollbar-bar{background:#c5c5c5; width:8px; right:6px}
 .type-x .ui-scrollbar-bar{background:#c5c5c5; height:8px; bottom:6px}
-.ui-scrollbar-barwrap.type-y{width:20px; background: rgba(0,0,0,0.05); border-top-width:20px; border-bottom-width:20px;}
-.ui-scrollbar-barwrap.type-x{height:20px; background: rgba(0,0,0,0.05); border-left-width:20px; border-right-width:20px;}
+.ui-scrollbar-barwrap.type-y{width:20px; background: rgba(0,0,0,0.034); border-top-width:20px; border-bottom-width:20px;}
+.ui-scrollbar-barwrap.type-x{height:20px; background: rgba(0,0,0,0.034); border-left-width:20px; border-right-width:20px;}
 
 .item-content .type-y .ui-scrollbar-bar{background:#c7c7c7; width:5px; right:0}
-.item-content .ui-scrollbar-barwrap.type-y{width:5px; background: rgba(0,0,0,0.05); border:0;}
+.item-content .ui-scrollbar-barwrap.type-y{width:5px; background: rgba(0,0,0,0.034); border:0;}
 .item-content .ui-tablescroll-wrap{width:calc(100% + 7px);}
 .item-content .ui-scrollbar.ready > .ui-scrollbar-item{width:calc(100% - 7px) !important;}
 .ui-select .ui-scrollbar.ready > .ui-scrollbar-item {width:100% !important;}
