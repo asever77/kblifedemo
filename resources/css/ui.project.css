@@ -6,8 +6,9 @@ body{font-size:14px; overflow: hidden;}
 .frame-bar .logo{max-width:126px}
 .frame-bar .logo img{margin-top:5px}
 .frame-bar .link{flex:1; padding-top:4px; text-align: center;}
-.frame-bar .link .ui-select{width:140px}
-.frame-bar .link .ui-select-btn{height:22px; font-size:12px; line-height:22px;}
+.frame-bar .link .ui-select{width:140px;}
+.frame-bar .link select {height:22px;}
+/* .frame-bar .link .ui-select-btn{height:22px; font-size:12px; line-height:22px;} */
 .frame-bar .link .inp-base{width:400px; height:22px; font-size:12px; line-height:22px;} 
 .frame-bar .btn-base{height:22px; font-size:12px; line-height:22px;     min-height: 22px; background:#959390; color:#fff; border-radius: 0;}
 .frame-bar .ui-select-btn span{margin-top:0}
@@ -143,8 +144,8 @@ button.group-title:hover {background:#ddd;}
 .frame-left .item-title .ui-tab-btn,
 .frame-left .item-title h3 {border:0; padding-left:0; padding-right:0;}
 .frame-left .item-content {border:0; padding:0; margin-top:0;}
-.frame-left .tbl-base {border-bottom:0;}
-.frame-left .ui-tablescroll-wrap {height:174px;}
+/* .frame-left .tbl-base {border-bottom:0;} */
+.frame-left .ui-tablescroll-wrap {max-height:340px; height:auto;}
 
 .call-area {margin:50px 0 25px}
 .call-status {display:inline-block; vertical-align:middle; font-size:0;}
