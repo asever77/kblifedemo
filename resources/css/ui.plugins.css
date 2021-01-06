@@ -250,7 +250,7 @@ a.ui-acco-btn:after {content:"keyboard_arrow_right";}
 .ui-m .ui-modal.type-full.ps-center{justify-content:center; align-items:flex-start;}
 .ui-m .ui-modal.type-full .ui-modal-wrap {margin:0; width:100%; height:auto; min-height:100%; position:relative; left:0; top:auto; bottom:-100vh; transition:opacity 0.2s ease-in, bottom 0.2s ease-in; overflow:hidden; border-radius:0;}
 .ui-m .ui-modal.open.type-full .ui-modal-wrap {bottom:0; opacity:1; top:auto;}
-.ui-m .ui-modal-footer{padding:10px 15px;}
+.ui-m .ui-modal-footer{padding:10px 15px 20px;}
 .ui-m .ui-modal.open.ps-top .ui-modal-wrap {top:0; opacity:1;}
 .ui-m .ui-modal.open.ps-bottom .ui-modal-wrap {bottom:0; opacity:1;}
 .ui-m .ui-modal.ps-center.is-over .ui-modal-wrap {margin:0;}
@@ -284,11 +284,11 @@ a.ui-acco-btn:after {content:"keyboard_arrow_right";}
 
 
 /* ui tab : base */
-.ui-tab {position:relative; margin:10px 0}
+.ui-tab {position:relative;}
 .ui-tab.type-scroll .ui-tab-btns{overflow:auto;}
 .ui-tab.type-scroll .ui-tab-btns .btn-wrap{display:flex; flex-wrap:nowrap; margin:0;}
 .ui-tab.type-scroll .ui-tab-btns .btn-wrap .ui-tab-btn{flex:1; min-width:100px}
-.ui-tab-btns {position:relative; overflow:hidden; z-index:1}
+.ui-tab-btns {position:relative; overflow:hidden;}
 .ui-tab-btns:after {content:""; display:block; position:absolute; bottom:0; left:0; z-index:1; clear:both; width:100%; height:1px; background:#ccc;}
 .ui-tab-btn {box-sizing:border-box; float:left; position:relative; z-index:0}
 .ui-tab-btn:hover span,
@@ -301,7 +301,7 @@ a.ui-acco-btn:after {content:"keyboard_arrow_right";}
 .ui-tab-pnl,
 .ui-tab-pnl[aria-hidden='true'] {visibility:hidden; position:absolute; opacity:0; display:none}
 .ui-tab-pnl.selected,
-.ui-tab-pnl[aria-hidden='false'] {visibility:visible; position:relative; opacity:1; z-index:1; display:block}
+.ui-tab-pnl[aria-hidden='false'] {visibility:visible; position:relative; opacity:1; display:block}
 /* ui-tab :base style */
 .ui-tab-btn {padding:10px 20px 9px; min-height:40px; background:#ececec; border:1px solid #ccc; border-left:0; font-size:14px;}
 .ui-tab-btn:first-child {border-left:1px solid #ccc;}

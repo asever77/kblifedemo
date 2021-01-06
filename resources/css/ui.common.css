@@ -202,7 +202,7 @@ input[type="date"] {appearance: none; -webkit-appearance: none;}
 input[type="radio"],
 input[type="checkbox"] {opacity:0; filter:alpha(opacity=0); display:inline-block; position:absolute; z-index:-1; vertical-align:top; appearance:none; -moz-appearance:none; -webkit-appearance:none; margin:0;}
 .lb-radio,
-.lb-check {position:relative; display:inline-flex; vertical-align:top; align-items:center; min-height:40px; font-size:13px; padding:0; margin:0; cursor:pointer; line-height:1;}
+.lb-check {position:relative; display:inline-flex; vertical-align:top; align-items:center; min-height:20px; font-size:12px; padding:0; margin:0; cursor:pointer; line-height:1;}
 .lb-radio:before,
 .lb-check:before {content:""; display:block; flex:0; min-width:18px; min-height:18px; margin-right:5px; box-sizing:border-box; border:1px solid #ececec; transition:box-shadow 0.5s, border 0.3s;}
 .lb-radio:before {border-radius:50%;}
@@ -238,7 +238,7 @@ input[type="checkbox"] {opacity:0; filter:alpha(opacity=0); display:inline-block
 .inp-base::-webkit-search-cancel-button{display:none;}
 textarea.inp-base{padding:10px; height:100px;}
 /* select */
-select {display:inline-block; position:relative; vertical-align:top; width:auto; height:30px; padding:0 40px 0 10px; background:url('../img/ico_form.png') right 10px center/auto auto no-repeat #fff; appearance:none; -moz-appearance:none; -webkit-appearance:none; border:1px solid #f2f2f2; font-size:14px; cursor:pointer;}
+select {display:inline-block; position:relative; vertical-align:top; width:auto; height:30px; padding:0 40px 0 10px; background:url('../img/ico_form.png') right 10px center/auto auto no-repeat #fff; appearance:none; -moz-appearance:none; -webkit-appearance:none; border:1px solid #f2f2f2; font-size:12px; cursor:pointer;}
 select::-ms-expand {display:none;}
 select optgroup,
 select option {font-style:normal; background-color:#fff; font-size:13px;}
@@ -249,7 +249,7 @@ select:focus{border-color:#000;}
 
 /* [base] BUTTON ---------------------------------------------------------------------------*/
 /* button wrap */
-.btn-wrap {position:relative; margin:10px 0; width:100%; text-align:center; font-size:0;}
+.btn-wrap {position:relative; margin:0; width:100%; text-align:center; font-size:0;}
 .btn-wrap [class*="btn-base"]{ margin:5px;}
 .btn-wrap.txta-l [class*="btn-base"]{margin-left:0; margin-right:10px;}
 .btn-wrap.txta-r [class*="btn-base"]{margin-right:0; margin-left:10px;}
@@ -324,9 +324,9 @@ input::-webkit-search-results-decoration { display: none; }
 /* table */
 .tbl-base {margin:0; width:100%; position:relative; border-top:1px solid #666; border-bottom:1px solid #d4d4d4;}
 .tbl-base table{width:100%;}
-.tbl-base table > thead th {background:#fff; border-bottom:1px solid #eee; color:#666; padding:5px; font-weight:500; font-size:13px; height:40px;}
+.tbl-base table > thead th {background:#fff; border-bottom:1px solid #eee; color:#666; padding:5px; font-weight:500; font-size:12px; height:30px;}
 .tbl-base table > tbody > tr > th,
-.tbl-base table > tbody > tr > td {color:#444; padding:3px 5px; font-weight:300; font-size:13px; word-break:break-all; background:#fff;}
+.tbl-base table > tbody > tr > td {color:#444; padding:3px 5px; font-weight:300; font-size:12px; word-break:break-all; background:#fff;}
 .tbl-base table > thead > tr > th:first-child,
 .tbl-base table > tbody > tr > th:first-child,
 .tbl-base table > tbody > tr > td:first-child {border-left:0;}
@@ -334,10 +334,11 @@ input::-webkit-search-results-decoration { display: none; }
 .tbl-base table > tbody > tr:first-child > td {padding-top:6px;}
 .tbl-base table > tbody > tr:last-child > th,
 .tbl-base table > tbody > tr:last-child > td {padding-bottom:6px;}
-.tbl-base table > tbody > tr > th {background:#fff; color:#666; font-weight:500; font-size:14px;}
+.tbl-base table > tbody > tr > th {background:#fff; color:#666; font-weight:500; font-size:12px;}
 .tbl-base tbody + tbody,
 .tbl-base tbody.line-t{border-top:1px solid #c5c5c5;}
-.tbl-base .none td{padding:57px 0 56px !important;}
+.tbl-base .none td{padding:17px 0 16px !important;}
+.ui-tablescroll[data-row="6"] .tbl-base .none td {padding:60px 0 60px !important;}
 
 /* [base] BULLET LIST ---------------------------------------------------------------------------*/
 .bul-hyphen,
@@ -438,7 +439,7 @@ dl.bul-hyphen > div:first-child{margin-top:0;}
 .grid-wrap,
 .grid-row {min-width:0; max-width:100%; display:flex; flex-wrap:wrap; width:100%; margin:0; }
 .grid-wrap{padding:10px;}
-.grid-row {margin:20px 0 0;}
+.grid-row {margin:13px 0 0;}
 .grid-col {margin:0 10px;}
 .grid-col[data-col="1"] {flex:1; min-width:calc(((100% / 12) * 1) - 20px); max-width:calc(((100% / 12) * 1) - 20px);}
 .grid-col[data-col="2"] {flex:1; min-width:calc(((100% / 12) * 2) - 20px); max-width:calc(((100% / 12) * 2) - 20px);}
