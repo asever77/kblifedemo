@@ -278,7 +278,7 @@ a.ui-acco-btn:after {content:"keyboard_arrow_right";}
 .view-y > .ui-scrollbar-barwrap.type-y{display:block; }
 .view-x > .ui-scrollbar-barwrap.type-x{display:block; }
 
-.ui-tablescroll-wrap .ui-scrollbar-barwrap.type-y { top:50px; height:auto; bottom:10px; }
+.ui-tablescroll-wrap .ui-scrollbar-barwrap.type-y { top:40px; height:auto; bottom:10px; }
 
 
 /* ui scroll box : base */
