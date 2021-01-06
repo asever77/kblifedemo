@@ -149,6 +149,8 @@ button.group-title:hover {background:#ddd;}
 
 .item-content .type-y .ui-scrollbar-bar{background:#c7c7c7; width:5px; right:0}
 .item-content .ui-scrollbar-barwrap.type-y{width:5px; background: rgba(0,0,0,0.034); border:0;}
+.item-content .type-x .ui-scrollbar-bar{background:#c7c7c7; height:5px; top:0}
+.item-content .ui-scrollbar-barwrap.type-x{height:5px; background: rgba(0,0,0,0.034); border:0;}
 .item-content .ui-tablescroll-wrap{width:calc(100% + 7px);}
 .item-content .ui-scrollbar.ready > .ui-scrollbar-item{width:calc(100% - 7px) !important;}
 .ui-select .ui-scrollbar.ready > .ui-scrollbar-item {width:100% !important;}

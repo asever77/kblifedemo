@@ -736,6 +736,8 @@ if (!Object.keys){
 			remove = opt.remove,
 			$base = !id ? $('.ui-scrollbar') : typeof id === 'object' ? id : $('[scroll-id="' + id +'"]');
 		
+		var timerResize;
+
 		if (win[global].support.touch) {
 			return false;
 		} 
@@ -750,7 +752,7 @@ if (!Object.keys){
 			if (!$item.length) {
 				return false;
 			}
-
+			
 			var nWrapH = $wrap.outerHeight();
 			var nWrapW = $wrap.outerWidth();
 			var nItemH = $item.prop('scrollHeight');
@@ -760,6 +762,21 @@ if (!Object.keys){
 			var changeW = (itemW !== nItemW || wrapW !== nWrapW);
 
 
+			$(win).on('resize', function(){
+				clearTimeout(timerResize);
+				timerResize = setTimeout(function(){
+					console.log(111);
+					$wrap.removeAttr('style');
+					//$wrap.css('overflow', 'hidden');
+					
+					nWrapH = $wrap.outerHeight();
+					//nWrapW = $wrap.outerWidth();
+					//$wrap.css('width', nWrapW);
+					$wrap.css('height', nWrapH);
+				}, 300);
+				
+			});
+			
 			if (changeH || changeW) {
 				var barH = Math.floor(nWrapH / (nItemH / 100));
 				var barW = Math.floor(nWrapW / (nItemW / 100));
@@ -771,7 +788,6 @@ if (!Object.keys){
 				
 				(nWrapH < nItemH) ? $wrap.addClass('view-y') : $wrap.removeClass('view-y');
 				(nWrapW < nItemW) ? $wrap.addClass('view-x') : $wrap.removeClass('view-x');
-
 				$wrap.data('opt', {'itemH':nItemH, 'itemW':nItemW, 'wrapH':nWrapH, 'wrapW':nWrapW });
 				eventFn();
 				scrollEvent($item, space);
