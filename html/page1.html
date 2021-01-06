@@ -303,7 +303,7 @@
                                         <h3>주소지정보</h3>
                                     </div>
                                     <div class="item-content">
-                                        <div class="ui-tablescroll tbl-base">
+                                        <div class="ui-tablescroll tbl-base" data-row="6">
                                             <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
                                                 <table>
                                                     <caption>
@@ -382,7 +382,7 @@
                                         <h3>연락처정보</h3>
                                     </div>
                                     <div class="item-content">
-                                        <div class="ui-tablescroll tbl-base">
+                                        <div class="ui-tablescroll tbl-base" data-row="6">
                                             <div class="ui-tablescroll-wrap ui-scrollbar tbl-base txta-c">
                                                 <table>
                                                     <caption>
@@ -402,6 +402,16 @@
                                                     <tbody>
                                                         <tr class="none">
                                                             <td colspan="3">조회된 연락처 정보가 없습니다.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>구분값</td>
+                                                            <td>010-0000-8888</td>
+                                                            <td><a href="tel:010-1111-1111">걸기</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>구분값</td>
+                                                            <td>010-0000-8888</td>
+                                                            <td><a href="tel:010-1111-1111">걸기</a></td>
                                                         </tr>
                                                         <tr>
                                                             <td>구분값</td>
@@ -574,8 +584,48 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="none">
-                                                                    <td colspan="8">조회된 주소지 정보가 없습니다.</td>
+                                                                <!-- <tr class="none">
+                                                                    <td colspan="8">조회된 계약정보가 없습니다.</td>
+                                                                </tr> -->
+                                                                <tr>
+                                                                    <td>2021.01.06</td>
+                                                                    <td>12345</td>
+                                                                    <td>12345</td>
+                                                                    <td>자동차보험A</td>
+                                                                    <td>김담당</td>
+                                                                    <td>2020.12.20</td>
+                                                                    <td>박등록</td>
+                                                                    <td>15426348</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2021.01.06</td>
+                                                                    <td>12345</td>
+                                                                    <td>12345</td>
+                                                                    <td>자동차보험A</td>
+                                                                    <td>김담당</td>
+                                                                    <td>2020.12.20</td>
+                                                                    <td>박등록</td>
+                                                                    <td>15426348</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2021.01.06</td>
+                                                                    <td>12345</td>
+                                                                    <td>12345</td>
+                                                                    <td>자동차보험A</td>
+                                                                    <td>김담당</td>
+                                                                    <td>2020.12.20</td>
+                                                                    <td>박등록</td>
+                                                                    <td>15426348</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2021.01.06</td>
+                                                                    <td>12345</td>
+                                                                    <td>12345</td>
+                                                                    <td>자동차보험A</td>
+                                                                    <td>김담당</td>
+                                                                    <td>2020.12.20</td>
+                                                                    <td>박등록</td>
+                                                                    <td>15426348</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -615,7 +665,7 @@
                                         </div>
                                         <div class="item-content ui-tab-pnls">
                                             <section class="ui-tab-pnl">
-                                                <div class="btn-area">
+                                                <div class="btn-area upper">
                                                     <button type="button" class="btn-base-s" 
                                                     onclick="$plugins.uiModalOpen({ 
                                                         id:'modal1', 
