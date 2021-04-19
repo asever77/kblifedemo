@@ -1,0 +1,240 @@
+배경 bgcolor-00 ~ 06 : 회색(00) -  녹색(01) - 노랑(02) - 파랑(03) - 보라(04) - 주황(05) - 핑크(06)
+라인 color-01 ~ 06  :녹색(01) - 노랑(02) - 파랑(03) - 보라(04) - 주황(05) - 핑크(06)
+
+기호(가,나,1,2) color-01 ~ 06 : 회색(00) - 주황(01) - 보라(02) - 녹색(03) - 핑크(04) - 파랑(05)
+
+테이블 color-01 ~ 06 : 회색(00) - 핑크(01) - 주황(02) - 보라(03) - 녹색(04) 
+
+speech-box color- : 핑크(01) - 주황(02) - 보라(03) - 녹색(04) - 노랑(05) -  파랑(06)
+
+팝업 정답확인 : nkor_0501_04_0607_202
+
+js-ignore-reset
+
+<div class="teacher-question bullet-circle">
+
+data-main-tabs="1,2"
+
+.group-speech-03 .char-box-01 .speech-box{width:450px; right:-10px; bottom:316px;}
+.group-speech-03 .char-box-01 .arrow{right:160px;}
+
+<span class="rect-num num-02 color-01"></span >
+<span class="ex-rect-icon"></span>
+<span class="dir-o"></span>
+<span class="dir-rect color-01">가</span>
+
+<span class="quot-open">「</span>
+<span class="quot-close">」</span>
+<div class="bullet-box icon-example ">예 </div>
+
+지시문
+<div class="info-box"><span class="emp">인물</span>을 클릭하세요.</div>
+
+<div class="content-inner">
+                        <div class="bg-color-box bg-color-05">
+                            <div class="hidden-box no-bg">
+                                <div class="text ti">
+                                    주호가 도서관에서 읽을 책을 찾는 장면입니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+톡톡도움말
+<div class="button-helper"><span>
+                    톡톡 도움말
+                </span></div>
+                <div class="popup-mini helper" data-button=".button-helper" style="width: 500px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title"></span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="bullet-box empty-circle">
+                            블릿형식
+                        </div>
+                    </div>
+                </div>
+어휘쏙쏙
+<span class="click-induced word button-mini-01">신하</span>
+                <div class="popup-mini word mini-01" data-button=".button-mini-01" style="width: 350px; top:90px; left:90px;">
+                    <div class="box-top">
+                        <div class="popup-title">어휘 쏙쏙</div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="word">해결</div>
+                        <div class="explain-word">
+                            <div>
+                                제기된 문제를 해명하거나 얽힌 일을 잘 처리함.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+일반팝업
+<span class="click-induced button-mini-02">다른 악기</span>
+<div class="popup-mini mini-02" data-button=".button-mini-02">
+                    <div class="box-top">
+                    <div class="popup-title">다른 악기에는 어떤 것들이 있을까요?</div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <!-- bullet-box empty-circle -->
+                        <div class="ti">바이올린, 첼로, 비올라, <span class="emp">피아노</span>, 나팔, 클라리넷, 트라이앵글, 실로폰, 캐스터네츠, 리코더, 탬버린……</div>
+                    </div>
+                </div>
+
+<!-- 잘했나요? 부족하다면  popup  -->
+                    <button type="butotn" class="button-helper-02" aria-label="잘했나요? 부족하다면"></button>
+                    <div class="popup-mini helper type-02" data-button=".button-helper-02" style="width:1000px">
+                        <div class="box-top">
+                            <div class="popup-title-box">
+                                <span class="popup-title">잘했나요? 부족하다면</span>
+                            </div>
+                            <div class="button-close"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="bullet-box bullet-box-00 empty-circle">책을 읽은 뒤에 책을 읽게 된 까닭, 책 내용, 인상 깊은 부분, 책을 읽은 뒤에 든 생각이나 느낌 따위를 쓴 글을 ‘독서 감상문’이라고 해요.</div>
+                            <div class="bullet-box bullet-box-00 empty-circle">독서 감상문을 쓸 때 책의 중요한 내용이나 사건을 중심으로 쓸 수 있어요.</div>
+                            <div class="bullet-box bullet-box-00 empty-circle">독서 감상문은 필요한 내용만 골라 쓸 수 있어요</div>
+                        </div>
+                    </div>
+
+
+<div class="ex-box align-cc">
+                            <div class="icon"></div>
+                            <div>
+                                <div class="item-box align-cc">
+                                    <div class="text">재미있는 표현</div>
+                                    <div class="text">신기한 표현</div>
+                                    <div class="text">감각적 표현</div>
+                                </div>
+                            </div>
+                        </div>
+
+캐릭터
+4명 30px
+3명 100px
+2명 200px
+
+스텝
+<ol class="box-level align-cc">
+                            <li class="active">독서 준비</li>
+                            <li>독서</li>
+                            <li>독서 후</li>
+                        </ol>
+
+<ol class="box-level align-cc">
+                            <li class="active">준비</li>
+                            <li>기본</li>
+                            <li>실천</li>
+                        </ol>
+
+
+
+//칭찬
+ <div class="praise-box" data-type="1">
+                    <div class="praise-button"></div>
+                    <canvas class="praise-animation"></canvas>
+                </div>
+<script src="./common/js/canvasAnimation.js"></script>
+<script src="./common/js/canvasAnimationData.js"></script>
+
+
+<div class="content-inner">
+                    <div class="bg-color-box bg-color-05">
+                        <div class="hidden-box no-bg">
+                            <div class="text ti">비린내도 안 나고 물컹하지도 않다고 했습니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+말풍선
+<div class="speech-box color-04 tail-02" style="width:800px; top:40px; left:200px">
+                        <div class="bg"></div>
+                        <div class="arrow lb" style="left:-50px; top:70px;"></div>
+                        <div class="speech-box-inner ta-c">
+....................
+                        </div>            
+                        <!-- <div class="close-speech-button"></div> -->
+                    </div>
+
+문제박스
+<div class="hidden-box show-icon" data-group="1">
+<div class="text ti">
+.........
+</div>
+</div>
+
+
+문제텍스트
+<div class="hidden-text" data-group="1">
+<div class="text ti">
+.........
+</div>
+</div>
+
+문제선택
+<div class="choice-box">
+    <div class="button">
+         가져왔는데
+        <div class="mark mark01"></div>
+    </div>
+    <div class="division"></div>
+    <div class="button">
+         가져왔는대
+        <div class="mark mark02"></div>
+    </div>
+</div>
+
+<div class="single-choice word" data-quiz="singleChoice" data-answer="3" data-visible=".empty-rect .text">
+
+사이드탭
+<div class="tab-box side-tab">
+                    <div class="button-box">
+                        <button type="button" class="button">대상 <span class="dir-rect color-01">가</span></button>
+                        <button type="button" class="button">대상 <span class="dir-rect color-01">나</span></button>
+                    </div>
+                    <div class="tab-content-box">
+                        <div class="tab-content">
+                            1
+                        </div>
+                        <div class="tab-content">
+                            2
+                        </div>
+                    </div>
+                </div>
+
+이너페이지
+<div class="tab-box bottom-tab">
+    <div class="tab-content-box">
+        <div class="tab-content content-01"></div>
+        <div class="tab-content content-01"></div>
+    </div>
+    <div class="button-box">
+        <div class="prev-button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="next-button"></div>
+    </div>
+</div>
+
+서브탭
+<div class="top-line-box">
+                    <div class="sub-tab-box" data-sub-tabs="표,사진,도표,동영상 ">
+                        <div class="sub-content sub-page-01">
+                        </div>
+
+                        <div class="sub-content sub-page-02">
+                        </div>
+
+                        <div class="sub-content sub-page-03">
+                        </div>
+
+                        <div class="sub-content sub-page-04">
+                        </div>
+                    </div>
+                </div>
